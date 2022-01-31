@@ -1,0 +1,820 @@
+/* FAQ page style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body{
+  font-family: 'Roboto' sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.headerimg{
+  background: url(../images/FAQ\ header\ graphic.png);
+ top: 70px;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+ }
+ .fimage{
+  background: url(../images/FAQ\ footer\ graphicv2.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+ }
+ .searchheading{
+   font-weight: 700;
+   color: #222162;
+   margin:0 0 50px;
+   text-align: center;
+  
+ }
+.box{
+padding-top: 13%;
+}
+input{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding:5px  10px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+.search-field{
+  width: 500px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  background:#f7f7f7;
+  border-radius: 25px 0 0 25px;
+}
+.search-field::placeholder{
+  color: #8f8f8f;
+}
+.search-field::placeholder::before{
+ content: '\1F50D';
+ margin-right: 15px;
+}
+.search-submit{
+  position: relative;
+ cursor: pointer;
+ width: 120px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 0 25px 25px 0;
+  background:#222162;
+  color: #fff;
+}
+#errmsg{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  color: #222162;
+  
+}
+#errmsg h3{
+  font-weight: 800;
+}
+.tile{
+ box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+ background:#f7f7f7;
+ margin: 20px 20px 0;
+ border-radius: 10px;
+ padding: 40px 25px;
+
+
+}
+.tile h3{
+  font-weight: 700;
+  font-size: 23px;
+  color: #222162;
+}
+.q-tiles-container{
+  display: none;
+
+}
+
+.q-tile{
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+ background:#f7f7f7;
+ margin: 0 20px 20px;
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+  text-align: center;
+  height: 250px; 
+ cursor: pointer;
+ 
+}
+.shadow_out{
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+.q-tile-b{
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+ background:#f7f7f7;
+ margin: 0 20px 20px;
+ border-radius: 10px;
+
+  text-align: center;
+  height: auto; 
+ cursor: pointer;
+
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+
+.q-tile p,.q-tile-b p{
+  color: #222162;
+  font-size: 18px;
+}
+.q-tile i.fa-share-alt,.q-tile-b i.fa-share-alt{
+  color: #7f1417;
+  display: none;
+}
+
+.q-tile h3,.q-tile-b h3{
+  color: #222162;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.faq-tiles{
+ 
+  color: #222162;
+  margin: 40px auto auto;
+
+}
+
+.card-text span{
+  display: block;
+}
+.card-text{
+  margin: 20px auto;
+}
+
+
+.faq-tiles-2{
+  padding-top: 80px;
+  
+}
+.overlay{
+  content: '';
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+
+}
+.share{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  width: 50%;
+  padding: 1em;
+  background: white;
+}
+.share,.overlay{
+  display: none;
+}
+.show-share{
+  display: block;
+}
+
+
+.btn3, .btn2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222162;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* 
+faq q and answers
+
+ */
+
+.answer{
+  display: none;
+ 
+  transition-timing-function: linear;
+transition-delay: 1s;
+}
+
+
+
+
+
+
+
+
+/* FAQ style end */
+
+  .ripsey-blue {
+    color: #232263;
+  }
+  .ripsey-red {
+    color: #891619;
+  }
+  
+  .fw-6 {
+    font-weight: 600;
+  }
+  .pcos-shadow {
+    box-shadow: -8px -6px 10px #e3e3e3, 1px 5px 8px #ffffff;
+  }
+  
+ 
+  .custom-control-label:before {
+    background-color: #232263;
+  }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #232263;
+  }
+ 
+  
+  .text-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #232263;
+  }
+  .text-normal {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #4e4eaa !important;
+  }
+  
+  .border-shadow-cards {
+    box-shadow: -4px -6px 6px #ffffff, 4px 4px 10px #ceced1;
+    border-radius: 8px;
+  }
+ 
+
+
+ 
+
+
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+  
+    #your-buddy-card {
+      margin-top: 20% !important;
+    }
+  
+    #bp_graphic {
+      margin-top: 0% !important;
+    }
+    #get-the-app {
+      margin: unset;
+    }
+ 
+  
+    .text-heading {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #232263;
+    }
+    .text-normal {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #4e4eaa !important;
+    }
+    #what-is-bp {
+      text-align: justify;
+    }
+  
+    #lottiefly-1-in-8 {
+      margin-top: 5%;
+      text-align: center !important;
+  
+      width: 100% !important;
+    }
+  
+    #lottiefly-1-in-8 img {
+      width: 35%;
+    }
+    #text-silent-killer {
+      margin: 0 8% !important;
+      text-align: justify;
+    }
+  
+    #indians-have-hyper {
+      text-align: center;
+    }
+    #bullet-bp {
+      text-align: end;
+    }
+    #bullet-bp > img {
+      width: 25px !important;
+    }
+    .border-shadow-cards {
+      padding: unset !important;
+      padding: 3% !important;
+      /* border: 1px solid black; */
+    }
+    #text-bullet-bp {
+      text-align: justify !important;
+    }
+    #stroke-heartfail {
+      height: 300px !important;
+      width: 100% !important;
+    }
+
+    .box{
+      padding-top: 17%;
+    }
+
+    
+    .headerimg{
+     
+      left: 0;
+      background-position: center;
+      height: 300px;
+    
+     margin-top: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .fimage{
+       left: 0;
+      background-position: center;
+      height: 250px;
+      bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100vw;
+    
+    }
+    .tile{
+     
+      padding: 20px;
+      height: 240px;
+      
+    
+    }
+    .tile .card-text{
+      margin: 15px auto;
+    }
+   
+   
+  }
+  @media screen and (min-width: 577px) and (max-width: 780px) {
+   
+    #your-buddy-card {
+      margin-top: 25% !important;
+    }
+    #get-the-app {
+      margin: 0px auto;
+    }
+    #navbar-main {
+      height: unset !important;
+      /* background-color: #f4f4f4; */
+    }
+  
+    .text-heading {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #232263;
+    }
+    .text-normal {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #4e4eaa !important;
+    }
+    #what-is-bp {
+      text-align: justify;
+    }
+  
+    #lottiefly-1-in-8 {
+      margin-top: 5%;
+      text-align: center !important;
+  
+      width: 100% !important;
+    }
+  
+    #lottiefly-1-in-8 img {
+      width: 35%;
+    }
+    #text-silent-killer {
+      margin: 0 8% !important;
+      text-align: justify;
+    }
+  
+    #indians-have-hyper {
+      text-align: center;
+    }
+    #bullet-bp {
+      text-align: end;
+    }
+    #bullet-bp > img {
+      width: 25px !important;
+    }
+    .border-shadow-cards {
+      padding: unset !important;
+      padding: 5% !important;
+      /* border: 1px solid black; */
+    }
+    #text-bullet-bp {
+      text-align: justify !important;
+    }
+    #stroke-heartfail {
+      height: unset !important;
+      width: 100% !important;
+    }
+       
+   
+    
+    .search-field{
+      width: 400px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 25px;
+      background:#f7f7f7;
+      border-radius: 25px 0 0 25px;
+      
+    }
+    
+    
+    .search-submit{
+      position: relative;
+     cursor: pointer;
+     width: 110px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 25px;
+      border-radius: 0 25px 25px 0;
+      background:#222162;
+      color: #fff;
+      text-align: center;
+    }
+    .box{
+      padding-top: 15%;
+      margin-top: 40px;
+    }
+    .searchheading{
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+ 
+    .headerimg{
+     
+      left: 0;
+      background-position: center;
+      height: 250px;
+    
+     margin-top: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .fimage{
+       left: 0;
+      background-position: center;
+      height: 250px;
+      bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100vw;
+    
+    }
+    .tile{
+     
+     padding: 20px;
+     height: 240px;
+     
+   
+   }
+   .tile h3,.results{
+     font-size: 20px;
+     
+   }
+   .q-tile{
+    height: 250px;
+   
+  }
+  
+   .tile b{
+     font-size: 17px;
+   }
+   .card-text{
+     margin:15px auto;
+   }
+   .tile .card-text span{
+       font-size: 17px;
+   }
+  
+   
+  }
+
+  
+  @media screen and (max-width: 576px) {
+  
+    #bp_graphic {
+      margin-top: 50px;
+    }
+    #your-buddy-card {
+      margin-top: 30% !important;
+    }
+    #get-the-app {
+      margin: 0px auto;
+    }
+   
+  
+    .text-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #232263;
+    }
+    .text-normal {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #4e4eaa !important;
+    }
+    #what-is-bp {
+      text-align: justify;
+    }
+  
+    #lottiefly-1-in-8 {
+      margin-top: 5%;
+      text-align: center;
+      width: 100% !important;
+    }
+    #lottiefly-1-in-8 img {
+      width: 50%;
+    }
+    #text-silent-killer {
+      margin: 0 4% !important;
+      text-align: justify;
+    }
+  
+    #indians-have-hyper {
+      text-align: center;
+    }
+    #bullet-bp {
+      text-align: end;
+    }
+    #bullet-bp > img {
+      width: 25px !important;
+    }
+    .border-shadow-cards {
+      padding: unset !important;
+      padding: 4% !important;
+      /* border: 1px solid black; */
+    }
+    #text-bullet-bp {
+      text-align: justify !important;
+    }
+    #stroke-heartfail {
+      height: 200px !important;
+      width: 100% !important;
+    }
+
+    .search-field{
+      width: 300px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      background:#f7f7f7;
+      border-radius: 25px 0 0 25px;
+      font-size: 18px;
+    }
+    
+    
+    .search-submit{
+      position: relative;
+     cursor: pointer;
+     width: 83px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      border-radius: 0 25px 25px 0;
+      background:#222162;
+      color: #fff;
+      text-align: center;
+    }
+
+    .box{
+      margin-top: 40px;
+    }
+    .searchheading{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .q-tile{
+      height: 180px;
+      width: 70%;
+    }
+    .q-tile-b {
+      width: 70%;
+    }
+    .tile{
+      width: 40%;
+     padding: 15px;
+     height: 150px;
+   
+   }
+   .tile h3,.q-tile-b h3,.q-tile h3,.results{
+     font-size: 17px;
+     
+   }
+   .tile b{
+    font-size: 15px;
+    
+  }
+   .card-text{
+     margin:10px auto;
+   }
+   .tile .card-text span,.q-tile-b p,.q-tile p{
+       font-size: 13px;
+   }
+    .headerimg{
+   
+      left: 0;
+      background-position: center;
+      height: 250px;
+     top: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .fimage{
+       left: 0;
+      background-position: center;
+      height: 200px;
+      bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .filter{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .filter h3{
+      display: none;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .headerimg{
+      
+      left: 0;
+      background-position: center;
+      height: 250px;
+     top: 35px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .fimage{
+       left: 0;
+      background-position: center;
+      height: 200px;
+      bottom: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+ 
+    body{
+      font-size: 15px;
+    }
+    .unpressed-button {
+      width: unset;
+      font-size: 15px;
+      margin: 5px;
+    }
+  
+    .pressed-button {
+      width: unset;
+      margin: 5px;
+      font-size: 15px;
+      border-radius: 6px;
+    }
+  
+    .ios-play-icons {
+      margin: 5px;
+    }
+
+    .search-field{
+      width: 220px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 10px 0 10px 10px;
+      background:#f7f7f7;
+      border-radius: 25px 0 0 25px;
+      font-size: 12px;
+    }
+    
+    
+  .search-submit{
+      position: relative;
+     cursor: pointer;
+     width: 65px;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 10px 5px;
+      border-radius: 0 25px 25px 0;
+      background:#222162;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+    }
+    .q-tile{
+      height: 180px;
+      width: 80%;
+    }
+    .q-tile-b {
+      width: 80%;
+    }
+    .tile{
+       width: 75%;
+      padding: 20px;
+      height: 180px;
+      margin: 15px;
+      
+    
+    }
+    .tile h3,.q-tile h3,.q-tile-b h3{
+      font-size: 16px;
+      
+    }
+    .tile b{
+      font-size: 15px;
+    }
+    .card-text{
+      margin:10px auto;
+    }
+    .tile .card-text span,.q-tile p{
+        font-size: 15px;
+    }
+    .box{
+      margin-top: 60px;
+      
+    }
+    .searchheading{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+   .faq-tiles{
+     margin-top: 20px;
+   }
+    .tile,.q-tile{
+      margin: 10px;
+      padding: 20px;
+    }
+    #errmsg h3{
+      font-size: 15px;
+      text-align: center;
+    }
+    #errmsg{
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .tile h3,.q-tile h3{
+      font-size: 15px;
+    }
+  }
+
+
+ 

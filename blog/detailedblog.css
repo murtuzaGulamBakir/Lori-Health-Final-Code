@@ -1,0 +1,181 @@
+body {
+  font-family: "Roboto" !important;
+  background-color: #f4f4f4 !important;
+  overflow-x: hidden !important;
+  margin-top: 120px;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.9rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.social-media-share {
+  font-size: 1.6rem;
+}
+
+.social-media-whatsapp {
+  cursor: pointer;
+  color: #25d366;
+  padding: 38%;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+}
+.social-media-linkedin {
+  color: #0e76a8;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+  padding: 38%;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.social-media-twitter {
+  color: #1da1f2;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+  padding: 38%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.social-media-googleplus {
+  color: #db4a39;
+  font-size: 1.4rem;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+  padding: 38%;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.social-media-StumbleUpon {
+  color: #eb4823;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+  padding: 35%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  text-align: center;
+  display: none;
+}
+.social-media-facebook {
+  color: #4267b2;
+  padding: 38%;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  text-align: center;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+}
+
+.suggestions {
+  font-size: 1rem;
+  color: #232263;
+  width: 100%;
+}
+.wave-container {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: -10;
+  width: 100% !important;
+}
+.wave-container img {
+  width: 100%;
+}
+.text-normal {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.pressed-button {
+  text-align: center;
+  width: 92px;
+  margin: 20px;
+  cursor: pointer;
+  letter-spacing: 1px !important;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  background: #f4f4f4;
+  box-shadow: inset 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff;
+}
+.unpressed-button {
+  position: relative;
+  border: none;
+  text-align: center;
+  background: transparent;
+  background: #f4f4f4;
+  color: black !important;
+  cursor: pointer;
+  width: 92px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px !important;
+  margin: 20px;
+}
+.ios-play-icons {
+  position: relative;
+  box-shadow: 1px 1px 4px #808080, 2px 0px 2px #808080;
+  margin: 15px;
+  border-radius: 6px;
+  width: 120px !important;
+  cursor: pointer;
+}
+
+#appstore-icon {
+  display: none;
+}
+#playstore-icon {
+  display: none;
+}
+
+.unpressed-button:hover {
+  background-color: #f4f4f4;
+  color: black !important;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.ripsey-blue {
+  color: #232263;
+}
+.ripsey-red {
+  color: #891619;
+}
+
+.list-square {
+  list-style-type: square;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+}

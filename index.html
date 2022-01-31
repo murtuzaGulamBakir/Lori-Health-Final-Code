@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1353*548 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <meta
+      name="description"
+      content="A personalized health plan for nutrition and activity to prevent and manage PCOS, Cholesterol, Blood Pressure and Diabetes. Get the app for free!"
+    />
+    <meta
+      name="keywords"
+      content="PCOS, Cholesterol, Blood Pressure, Diabetes, Nutrition, Lori, Health"
+    />
+    <meta name="author" content="Silky Singh" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CGVEHRXF83"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CGVEHRXF83");
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f7f7f7 !important;
+        font-family: "Roboto" !important ;
+      }
+      .wavecontainer {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background: url(./HomepageImages/wave01.png) no-repeat;
+        background-size: cover;
+      }
+      .app-ic {
+        float: none;
+        max-width: 190px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+      .app-icon {
+        max-width: 160px;
+        width: 100%;
+      }
+
+      #QR {
+        max-width: 110px;
+      }
+      .bmargin-buttons {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="./bootstrap4.0.0/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/new.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <title>Lori: Your buddy for a disease-free life</title>
+  </head>
+  <body>
+    <nav
+      id="navbar-main"
+      class="navbar navbar-expand-lg fixed-top navbar-light text-center"
+    >
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./images/logo-update.png" style="width: 100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbar-toggler-id"
+        onclick="handleClick()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="appstore-icon">
+            <a
+              class="nav-link disabled"
+              href="https://apps.apple.com/us/app/ripsey/id1547471514?mt=8"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/ios1.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item" id="playstore-icon">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.ripsey"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/google-play.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./PCOS/pcos.html">PCOS</a>
+                <a class="dropdown-item" href="./CHOLESTEROL/cholestrol.html"
+                  >Cholesterol
+                </a>
+                <a class="dropdown-item" href="./BLOOD PRESSURE/bp.html"
+                  >Blood pressure</a
+                >
+                <a class="dropdown-item" href="./DIABETES/diabetes.html"
+                  >Diabetes</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Prevent
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./DNA/dna.html">DNA Testing</a>
+                <a
+                  class="dropdown-item"
+                  href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./blog/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./about us/about.html"
+              >About us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wavecontainer">
+      <div class="container-fluid">
+        <div class="row featurette">
+          <div
+            class="col-lg-5 order-lg-1"
+            id="your-buddy-card"
+            style="margin-top: 10%"
+          >
+            <div class="text-wrapper text-center text-lg-left">
+              <h3 class="featurette-heading lori-blue-dark hi-lori-text">
+                Hi I'm Lori !
+              </h3>
+              <h4 class="lead lori-blue-dark i-help-to-manage">
+                I help you
+                <span class="lori-skyblue-light manage-prevent-text"
+                  >manage, reverse or prevent</span
+                >
+                PCOS | Cholesterol Issues | Hypertension | Diabetes
+              </h4>
+              <br />
+              <h4 class="lori-blue-dark lets-get-you-healthy">
+                Let's get you healthy!
+              </h4>
+              <br />
+              <br />
+              <div class="qr-app-icons">
+                <div class="d-flex justify-content-between qr-app-icons-child">
+                  <div>
+                    <img
+                      id="QR"
+                      class="border-shadow-download-icons"
+                      src="./images/qr.png"
+                      alt="qr-image"
+                    />
+                  </div>
+                  <div class="d-flex flex-column justify-content-between">
+                    <h4
+                      class="
+                        featurette-heading
+                        lori-skyblue-dark
+                        download-for-free-text
+                      "
+                    >
+                      DOWNLOAD FOR FREE
+                    </h4>
+
+                    <div
+                      class="
+                        d-flex
+                        justify-content-between
+                        playstore-appstore-images
+                      "
+                    >
+                      <a class="disabled"
+                        onclick="window.location='https://apps.apple.com/us/app/ripsey/id1547471514?mt=8'"
+                        ><img
+                          style="cursor: pointer"
+                          class="app-icon border-shadow-download-icons"
+                          src="./images/ios.png"
+                          alt=""
+                      /></a>
+
+                      <a
+                        onclick="window.location='https://play.google.com/store/apps/details?id=com.ripsey'"
+                        ><img
+                          style="cursor: pointer"
+                          class="app-icon border-shadow-download-icons"
+                          src="./images/google-play.png"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <img
+              id="bp_graphic"
+              class="featurette-image img-fluid"
+              alt="500x500"
+              style="margin-top: 8%"
+              src="./HomepageImages/graphic01.png"
+              data-holder-rendered="true"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br /><br /><br /><br /><br /><br /><br /> -->
+      <br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br />
+    </div>
+
+    <div class="container section-2-container">
+      <div class="d-flex justify-content-around row">
+        <div class="section-2-tiles section-2-tile-1 text-center">
+          <h2 style="background-color: #5e99bc">How it works?</h2>
+          <p style="color: #5e99bc">
+            Technology is like magic. Learn more about how I use technology to
+            help you be healthy
+          </p>
+        </div>
+        <div class="section-2-tiles section-2-tile-2">
+          <h2 style="background-color: #7abca4">Take An Assessment</h2>
+          <p style="color: #7abca4">
+            Answer few questions and know how healthy you are!
+          </p>
+        </div>
+        <div class="section-2-tiles section-2-tile-3">
+          <h2 style="background-color: #88d0d8">Services And Pricing</h2>
+          <p style="color: #5e99bc">Look at What's on offer</p>
+          <br /><br /><br />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-center">
+          <div
+            id="myCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+            style="min-height: 370px"
+          >
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="img-box">
+                  <img src="./images/test-user1.png" alt="" />
+                </div>
+                <p class="review">
+                  I have always been a health-conscious person. I was
+                  recommended the DNA test by Lori when I was looking to know
+                  more about my health. It was an eye-opener. I have learnt that
+                  I am intolerant to certain food groups and I have learnt about
+                  potential health risks. Now, I know more about my health and
+                  Lori's plan keeps me in check!
+                </p>
+
+                <p class="overview"><b>~ Kiran</b></p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box">
+                  <img src="./images/test-user3.png" alt="" />
+                </div>
+                <p class="review">
+                  I am happy to talk about you guys! I was diagnosed with PCOS,
+                  Lori helped me manage it. Now my hormone levels are back to
+                  normal, and I have a healthy cycle. <br />
+                  I truly liked Lori's concept that you become healthy and then
+                  lose weight, not the other way around. Thank you Lori team!
+                </p>
+
+                <p class="overview"><b>~ Amoolya</b></p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box">
+                  <img src="./images/test-user2.png" alt="" />
+                </div>
+                <p class="review">
+                  I am a student. I was on Lori's plan during the lockdown and
+                  it helped me manage my nutrition. I could see a change in my
+                  energy levels and it helped control my junk food snack breaks.
+                </p>
+
+                <p class="overview"><b>~ Tushar</b></p>
+              </div>
+
+              <div class="quote-1">
+                <img src="./HomepageImages/elements-01.png" alt="" />
+              </div>
+              <div class="quote-2">
+                <img src="./HomepageImages/elements-02.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            col-lg-6 col-md-12
+            align-items-center
+            d-flex
+            justify-content-center
+          "
+        >
+          <section
+            style="
+              box-shadow: 6px 6px 12px rgb(0 0 0 / 8%),
+                -6px -6px 12px rgb(255 255 255);
+              border-radius: 20px;
+              min-height: 360px;
+            "
+            class="video-height"
+          >
+            <video
+              style="width: 100%"
+              loop="true"
+              autoplay="true"
+              muted="muted"
+            >
+              <source src="./images/appplayvideo.mp4" type="video/mp4" />
+              <source src="./images/appplayvideo.ogg" type="video/ogg" />
+
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3-wrapper">
+      <div class="section-3 container lori-blue-dark">
+        <h4 class="font-size-rem text-center">
+          A Recommendation-based approach backed by scientific research,
+          customer insights, consumer behaviour helps build the custom health
+          plan for you...
+        </h4>
+        <img class="img-fluid" src="./HomepageImages/graphic02.png" alt="" />
+      </div>
+
+      <img src="./HomepageImages/wave01mt.png" alt="" />
+      <br class="d-none d-sm-block" /><br class="d-none d-sm-block" /><br
+        class="d-none d-sm-block"
+      /><br class="d-none d-sm-block" /><br
+        class="d-none d-sm-block"
+      /><br /><br /><br />
+    </div>
+
+    <!-- <div class="quiz-wrapper quiz-fonts">
+      <div class="container">
+        <h2 class="text-center take-an-assesment-text" style="color: #7abca4">
+          Take an assesment to know how healty you are
+        </h2>
+        <form id="quiz-check" name="quizform">
+          <div class="form-group">
+            <label for="age">1.How young are you ?</label>
+            <input
+              name="age"
+              type="number"
+              minlength="1"
+              maxlength="3"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter Age"
+              required
+            />
+          </div>
+          <div><label for="gender">2.Are you ?</label></div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="gender"
+              class="form-check-input sev_check"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="male"
+            />
+            <label class="form-check-label" for="inlineCheckbox1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="gender"
+              class="form-check-input sev_check"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="female"
+            />
+            <label class="form-check-label" for="inlineCheckbox2">Female</label>
+          </div>
+          <div class="form-group">
+            <label for="height">3.Your height (cm) ?</label>
+            <input
+              type="number"
+              name="height"
+              class="form-control"
+              minlength="2"
+              maxlength="3"
+              id="height"
+              placeholder="Enter Height in (cm)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="weight">4.Your weight (kg) ?</label>
+            <input
+              type="number"
+              name="weight"
+              class="form-control"
+              minlength="2"
+              maxlength="3"
+              id="weight"
+              placeholder="Enter Weight in (kg)"
+            />
+          </div>
+          <div>
+            <label for="issues" required
+              >5.Any existing clinical issues ?</label
+            >
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="issues"
+              class="form-check-input sev_check-issues"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineCheckbox1"
+              >No Clinical Issue</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="issues"
+              class="form-check-input sev_check-issues"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >1 clinical issue</label
+            >
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="issues"
+              class="form-check-input sev_check-issues"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >2 clinical issues</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="issues"
+              class="form-check-input sev_check-issues"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >3 or more</label
+            >
+          </div>
+          <div>
+            <label for="dailyactivity">6.Your Daily Activity ?</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="dailyactivity"
+              class="form-check-input sev_check-dailyactivity"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineCheckbox1"
+              >Sedentary</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="dailyactivity"
+              class="form-check-input sev_check-dailyactivity"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Moderately Active</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="dailyactivity"
+              class="form-check-input sev_check-dailyactivity"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Very Active</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="dailyactivity"
+              class="form-check-input sev_check-dailyactivity"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Extra Active</label
+            >
+          </div>
+          <div>
+            <label for="usualmood">7.Your usual mood ?</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="usualmood"
+              class="form-check-input sev_check-usualmood"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineCheckbox1"
+              >Pleasant + Energized</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="usualmood"
+              class="form-check-input sev_check-usualmood"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Pleasant + Calm</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="usualmood"
+              class="form-check-input sev_check-usualmood"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Unpleasant + Energized</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="usualmood"
+              class="form-check-input sev_check-usualmood"
+              type="checkbox"
+              id="inlineCheckbox2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineCheckbox2"
+              >Unpleasant + Calm</label
+            >
+          </div>
+          <br />
+          <button
+            type="submit"
+            class="btn btn-lg quiz-submit-button"
+            onclick="calculateHealthScore();"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div> -->
+
+    <div class="quiz-mobile-view">
+      <div class="quiz-header">
+        <h2 class="text-center take-an-assesment-text" style="color: #7abca4">
+          Take an assesment to know how healthy you are
+        </h2>
+      </div>
+      <div class="mobile-viewport">
+        <div class="start-quiz" id="start-quiz">
+          <div class="quiz-lori-logo">
+            <img src="./images/logo-update.png" class="img-fluid" alt="" />
+          </div>
+
+          <p>Health Assesment</p>
+          <div class="start-button">
+            <button onclick="handlestart()">START</button>
+          </div>
+        </div>
+        <form id="quiz-check" name="quizform">
+          <div class="ques-1" id="ques-1">
+            <div class="form-group">
+              <label for="age">1.How young are you ?</label>
+              <input
+                name="age"
+                type="number"
+                minlength="1"
+                maxlength="3"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter Age"
+              />
+            </div>
+          </div>
+          <div class="ques-2" id="ques-2">
+            <div class="form-check-text-label">
+              <label for="gender">2.Are you ?</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                name="gender"
+                class="form-check-input sev_check"
+                type="checkbox"
+                id="inlineCheckbox1gender"
+                value="male"
+              />
+              <label class="form-check-label" for="inlineCheckbox1gender"
+                >Male</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="gender"
+                class="form-check-input sev_check"
+                type="checkbox"
+                id="inlineCheckbox2gender"
+                value="female"
+              />
+              <label class="form-check-label" for="inlineCheckbox2gender"
+                >Female</label
+              >
+            </div>
+          </div>
+          <div class="ques-3" id="ques-3">
+            <div class="form-group">
+              <label for="height">3.Your height (cm) ?</label>
+              <input
+                type="number"
+                name="height"
+                class="form-control"
+                minlength="2"
+                maxlength="3"
+                id="height"
+                placeholder="Enter Height in (cm)"
+              />
+            </div>
+          </div>
+          <div class="ques-4" id="ques-4">
+            <div class="form-group">
+              <label for="weight">4.Your weight (kg) ?</label>
+              <input
+                type="number"
+                name="weight"
+                class="form-control"
+                minlength="2"
+                maxlength="3"
+                id="weight"
+                placeholder="Enter Weight in (kg)"
+              />
+            </div>
+          </div>
+          <div class="ques-5" id="ques-5">
+            <div class="form-check-text-label">
+              <label for="issues" required
+                >5.Any existing clinical issues ?</label
+              >
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                name="issues"
+                class="form-check-input sev_check-issues"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >No Clinical Issue</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="issues"
+                class="form-check-input sev_check-issues"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2">PCOS</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                name="issues"
+                class="form-check-input sev_check-issues"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Cholesterol</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="issues"
+                class="form-check-input sev_check-issues"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option4"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Diabetes</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="issues"
+                class="form-check-input sev_check-issues"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option5"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Blood Pressure</label
+              >
+            </div>
+          </div>
+          <div class="ques-6" id="ques-6">
+            <div class="form-check-text-label">
+              <label for="dailyactivity">6.Your Daily Activity ?</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                name="dailyactivity"
+                class="form-check-input sev_check-dailyactivity"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Sedentary</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="dailyactivity"
+                class="form-check-input sev_check-dailyactivity"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Moderately Active</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="dailyactivity"
+                class="form-check-input sev_check-dailyactivity"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Very Active</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="dailyactivity"
+                class="form-check-input sev_check-dailyactivity"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Extra Active</label
+              >
+            </div>
+          </div>
+          <div class="ques-7" id="ques-7">
+            <div class="form-check-text-label">
+              <label for="usualmood">7.Your usual mood ?</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                name="usualmood"
+                class="form-check-input sev_check-usualmood"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Pleasant + Energized</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="usualmood"
+                class="form-check-input sev_check-usualmood"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Pleasant + Calm</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="usualmood"
+                class="form-check-input sev_check-usualmood"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Unpleasant + Energized</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="usualmood"
+                class="form-check-input sev_check-usualmood"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Unpleasant + Calm</label
+              >
+            </div>
+          </div>
+          <div class="ques-8" id="ques-8">
+            <div class="form-group">
+              <label for="email"
+                >Please enter your email address to see the score</label
+              >
+              <input
+                name="email"
+                type="email"
+                minlength="5"
+                maxlength="40"
+                class="form-control"
+                id="emailinputfirebase"
+                aria-describedby="emailHelp"
+                placeholder="e.g. you@gmail.com"
+              />
+            </div>
+          </div>
+          <div class="next-button-wrapper" id="next-button-wrapper">
+            <a
+              class="btn btn-md next-button"
+              id="next-button"
+              onclick="handlenext();handleFirebaseCommit()"
+              >Next</a
+            >
+          </div>
+          <div id="results">
+            <img src="./images/logo-update.png" class="img-fluid" alt="" />
+            <h1 id="results-text"></h1>
+          </div>
+        </form>
+        <!-- <div class="quiz-questions">
+          <label for="age">1.How young are you ?</label>
+          <input
+            name="age"
+            type="number"
+            minlength="1"
+            maxlength="3"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter Age"
+            required
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <div class="section5-wrapper">
+      <h1 class="text-center features-text">Features</h1>
+      <div class="container d-flex justify-content-center">
+        <img
+          class="img-fluid section5-wrapper-image"
+          src="./HomepageImages/graphic04.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+            <ul class="social list-unstyled" style="float: right">
+              <li>
+                <a href="https://wa.me/+919152017765"
+                  ><span class="fab fa-whatsapp" style="color: #01e675"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lori.healthglobal/"
+                  ><span style="color: #3b5998" class="fab fa-facebook"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="
+                https://www.linkedin.com/company/lori-health/"
+                  ><span style="color: #0e76a8" class="fab fa-linkedin"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/lori.health/"
+                  ><span style="color: #f14843" class="fab fa-instagram"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Lori_Health"
+                  ><span style="color: #00acee" class="fab fa-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Manage</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./PCOS/pcos.html">PCOS</a></li>
+              <li><a href="./CHOLESTEROL/cholestrol.html">Cholesterol</a></li>
+              <li><a href="./BLOOD PRESSURE/bp.html">Blood Pressure</a></li>
+              <li><a href="./DIABETES/diabetes.html">Diabetes</a></li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Prevent</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./DNA/dna.html">DNA Testing</a></li>
+              <li>
+                <a href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+              </li>
+              <li>
+                <a href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>About</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./about us/about.html">About us</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Legal</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>&copy; 2021 All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap4.0.0/jquery-3.2.1.slim.min.js"></script>
+    <script src="./bootstrap4.0.0/popper.min.js"></script>
+    <script src="./bootstrap4.0.0/bootstrap.min.js"></script>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+        navbarColor();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          document.getElementById("appstore-icon").style.display = "block";
+
+          document.getElementById("playstore-icon").style.display = "block";
+          // document.getElementById("navbar-main").style.maxHeight = "80px";
+
+          // document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("appstore-icon").style.display = "none";
+          document.getElementById("playstore-icon").style.display = "none";
+          // document.getElementById("navbar-main").style.maxHeight = "unset";
+        }
+      }
+
+      function navbarColor() {
+        if (
+          document.body.scrollTop > 70 ||
+          document.documentElement.scrollTop > 70
+        ) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      }
+
+      function handleClick() {
+        document.getElementById("navbar-main").style.backgroundColor =
+          "#f7f7f7";
+      }
+    </script>
+    <!-- <script>
+      $(document).ready(function () {
+        if ($(window).width() < 767) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      });
+    </script> -->
+
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/20272274.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAopv9ThGzHy60N7I4qUUDVZb28pbohUuc",
+        authDomain: "lori-web-e1f8f.firebaseapp.com",
+        projectId: "lori-web-e1f8f",
+        storageBucket: "lori-web-e1f8f.appspot.com",
+        messagingSenderId: "215248208172",
+        appId: "1:215248208172:web:42f06ba085f4420c202c89",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      //   function writeUserData() {
+      //     userId = "murtazauserID";
+      //  consol
+      //     firebase
+      //       .database()
+      //       .ref("users/" + userId)
+      //       .set({
+      //         username: "murtuza",
+      //         email: "murtuza@gmail.com",
+      //       });
+      //   }
+      //   writeUserData();
+
+      function handleFirebaseCommit() {
+        var quizReport = JSON.parse(localStorage.getItem("quizReport"));
+        if (
+          quizReport != null &&
+          document.getElementById("next-button").innerHTML === "Submit" &&
+          document.getElementById("results-text").style.display != "block"
+        ) {
+          var email = quizReport.email.substring(
+            0,
+            quizReport.email.lastIndexOf("@")
+          );
+          email = email.replace(/[^a-zA-Z ]/g, "");
+          firebase
+            .database()
+            .ref("quiz/" + email)
+            .set({
+              quizReport,
+            });
+          localStorage.setItem("quizReport", null);
+        }
+      }
+    </script>
+
+    <!-- Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="./homepage.js" type="text/javascript"></script>
+  </body>
+</html>

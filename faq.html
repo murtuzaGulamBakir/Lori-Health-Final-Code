@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1353*548 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap4.0.0/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #f7f7f7 !important;
+        font-family: "Roboto" !important ;
+      }
+
+      .dropdown-item {
+        cursor: pointer;
+      }
+      .app-ic {
+        float: none;
+        max-width: 190px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+      .app-icon {
+        max-width: 160px;
+        width: 100%;
+      }
+
+      #QR {
+        max-width: 110px;
+      }
+      .bmargin-buttons {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <title>Lori</title>
+  </head>
+  <body>
+    <nav
+      id="navbar-main"
+      style="background: #f7f7f7 !important"
+      class="navbar navbar-expand-lg fixed-top navbar-light text-center"
+    >
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./images/logo-update.png" style="width: 100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="appstore-icon">
+            <a
+              class="nav-link disabled"
+              href="https://apps.apple.com/us/app/ripsey/id1547471514?mt=8"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/ios1.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item" id="playstore-icon">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.ripsey"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/google-play.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./PCOS/pcos.html">PCOS</a>
+                <a class="dropdown-item" href="./CHOLESTEROL/cholestrol.html"
+                  >Cholesterol
+                </a>
+                <a class="dropdown-item" href="./BLOOD PRESSURE/bp.html"
+                  >Blood pressure</a
+                >
+                <a class="dropdown-item" href="./DIABETES/diabetes.html"
+                  >Diabetes</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Prevent
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./DNA/dna.html">DNA Testing</a>
+                <a
+                  class="dropdown-item"
+                  href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pressed-button" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./blog/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./about us/about.html"
+              >About us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="headerimg"></div>
+
+      <div class="box">
+        <h1 class="searchheading">How Can We Help You ?</h1>
+        <form
+          action=""
+          class="d-flex align-items-center justify-content-center"
+        >
+          <input
+            type="text"
+            name=""
+            placeholder=" Type keywords to find answers"
+            class="search-field"
+            onkeyup="searchFun()"
+            id="myinput"
+          />
+          <input
+            type="submit"
+            name=""
+            value="Search"
+            class="search-submit"
+            onclick="searchFun()"
+          />
+        </form>
+      </div>
+      <div id="errmsg">
+        <h3>TRY SEARCHING WITH A DIFFERENT KEYWORD</h3>
+      </div>
+      <div class="container-fluid faq-tiles" id="faq-tiles">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>General</h3>
+            <div class="card-text">
+              <span>The Basics</span>
+              <span>Sign up & Getting Started</span>
+              <span>Pricing</span>
+            </div>
+
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./Generalfaq/General_The_Basics.html'"
+              >View More</b
+            >
+          </div>
+
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>Clinical Concerns</h3>
+            <div class="card-text">
+              <span>PCOS</span>
+              <span>Diabetes</span>
+              <span>Cholesterol issues</span>
+            </div>
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./Clinicalfaq/PCOSfaq.html'"
+              >View More</b
+            >
+          </div>
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>DNA Testing</h3>
+            <div class="card-text">
+              <span>How it works</span>
+              <span>DNA Information</span>
+              <span>Pricing</span>
+            </div>
+
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./DNAfaq/dnaworking.html'"
+              >View More</b
+            >
+          </div>
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>Blood Tests</h3>
+            <div class="card-text">
+              <span>How it works</span>
+              <span>Testing Information</span>
+              <span>Pricing</span>
+            </div>
+
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./BloodTestfaq/howitworks.html'"
+              >View More</b
+            >
+          </div>
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>Intermittent Fasting</h3>
+            <div class="card-text">
+              <span>The Basics</span>
+              <span>Lori's Intermittent Fasting</span>
+              <span>Tracker</span>
+            </div>
+
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./Fastingfaq/fastingbasics.html'"
+              >View More</b
+            >
+          </div>
+          <div class="tile col-lg-3 col-md-3 col-sm-5">
+            <h3>Menstrual Health</h3>
+            <div class="card-text">
+              <span>The Basics</span>
+              <span>Lori's Menstrual Cycle</span>
+              <span>Tracker</span>
+            </div>
+
+            <b
+              class="cursor-pointer"
+              onclick="window.location='./Menstrualfaq/Basics.html'"
+              >View More</b
+            >
+          </div>
+          <div
+            class="
+              cursor-pointer
+              tile
+              col-lg-3 col-md-3 col-sm-3
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+            style="height: auto"
+            onclick="window.location='./HealthNutsfaq/healthnuts.html'"
+          >
+            <h3>Health Nuts</h3>
+          </div>
+          <div
+            class="
+              cursor-pointer
+              tile
+              col-lg-3 col-md-3 col-sm-3
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+            style="height: auto"
+            onclick="window.location='./Contactusfaq/contactus.html'"
+          >
+            <h3>Contact Us</h3>
+          </div>
+
+          <div
+            class="
+              cursor-pointer
+              tile
+              col-lg-3 col-md-3 col-sm-3
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+            style="height: auto"
+            onclick="window.location='./Miscellaneousfaq/miscellaneous.html'"
+          >
+            <h3>Miscellaneous</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="q-tiles-container container-fluid">
+      <div
+        class="row d-flex justify-content-between filter align-items-center"
+        style="margin: 0px 10% 0"
+      >
+        <h3 style="color: #222162" class="results">Results Found</h3>
+        <!-- <div class="dropdown">
+            <a
+              class="btn-lg shadow_out unpressed-button-b dropdown-toggle shadow_out"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="background: #f7f7f7;
+              color: #8f8f8f;"
+    
+            >
+           FILTER BY CATEGORY
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" onclick="filtergeneral()" >General</a>
+              <a class="dropdown-item" onclick="filterpcos()" >PCOS</a>
+              <a class="dropdown-item" onclick="filterperiod()">Menstrual Health</a>
+              <a class="dropdown-item" onclick="filterdiab()" >Diabetes</a>
+              <a class="dropdown-item" onclick="filterdna()">DNA Testing</a>
+              <a class="dropdown-item" onclick="filterbt()">Blood Test</a>
+              <a class="dropdown-item" onclick="filterbp()">Blood Pressure</a>
+              <a class="dropdown-item" onclick="filterif()">Intermittent Fasting</a>
+             
+            </div>
+          </div> -->
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is Lori?</h3>
+
+          <p class="answer">
+            Lori is your buddy. She can help you become and stay healthy. You
+            can either be someone who is looking to become healthy and prevent a
+            future health condition or someone who is trying to manage a
+            clinical condition, Lori will help you be your best healthy self!
+            And what’s more, the home screen is customised for you. Here, you
+            can access your “health plan for the day” and various trackers for
+            clinical concerns, menstruation and, fasting. As and when we build
+            new features, you will be able to access them here. You must have
+            noticed your "Health Score" at the top of your home screen. This
+            score is calculated based on existing health metrics, clinical
+            concerns (if any), and your habits (Complete Your Day on the
+            nutrition recommendations screen). The score is on a scale of 1 to
+            10, 10 representingmost healthy.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who should use Lori app?</h3>
+
+          <p class="answer">
+            The Lori app is suitable for anyone who is above 18 years of age.
+            The app creates a personalised health plan for every user - men and
+            women across all ages and stages of life. The app currently
+            addresses lifestyle diseases such as PCOS, Cholesterol issues,
+            Hypertension and Diabetes. Please write to us at
+            <a href="mailto:lori@lori.health">lori@lori.health</a> if you are
+            looking to manage any other clinical concern.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How it Works?</h3>
+
+          <p class="answer">
+            You would enter your personal information, preferences, and other
+            health-related factors. Lori will work her magic and create a
+            personalised health plan for you. You get to see your
+            recommendations as per the plan is and track your health through the
+            app. After all, we are all about a convenient and personalised
+            solution! Every health-related action you take on the app triggers
+            the regeneration of your health plan and gives you a new set of
+            recommendations. E.g., starting a period, ending a fast, taking a
+            blood test, DNA test results. Your "Health Score" is calculated
+            based on your health metrics and habits, and the goal is for you to
+            be a 10/10 on the scale.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How long should I expect to use the Lori app?</h3>
+
+          <p class="answer">
+            Lori is your buddy to stay healthy. She helps you to manage, reverse
+            or prevent lifestyle diseases. The time it takes to reverse a
+            disease varies from one person to another and, one disease to
+            another. It is hard to provide a specific time when the reversal
+            will happen. You can use the Lori app as long as you would like
+            because the recommendations are personalised, which help you manage
+            your health better!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is Lori app available for children?</h3>
+
+          <p class="answer">
+            Currently, no. The app is recommended for the use of individuals
+            above 18 years of age.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is Lori’s Personalised Health Plan?</h3>
+
+          <p class="answer">
+            Your personalised health plan is primarily a nutrition plan. Based
+            on all the information that you have given during the sign-up (e.g.,
+            your basic health information, your lifestyle, allergies and
+            clinical concerns, choices and preferences, diagnostic tests), Lori
+            plans a nutrition plan for you to be healthy and stay healthy. The
+            nutrition plan offers you suggestions on morning drink, breakfast,
+            lunch, and dinner. Each of the plans is curated for you, to help you
+            be your best healthy self!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Does everyone get a Personalised Health Plan?</h3>
+
+          <p class="answer">
+            Yes, everyone gets a personalised health plan as soon as they sign
+            up. Once the 7-day free trial period ends, you should subscribe to
+            continue to access your personalised health plan.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What will I eat?</h3>
+
+          <p class="answer">
+            We offer a wide range of cuisines and varieties that you can choose
+            from. The dishes are easy to prepare and are tailored to your health
+            needs. Crash diets are a concept that we don’t believe in. Rest
+            assured your food suggestions are based on your lifestyle, food
+            preferences, clinical concerns, allergies, and any other inputs such
+            as DNA, that you have given us. The nutrition regime provides you
+            with suggestions that you can easily make at home and make you feel
+            well-fed. We have designed each of the dishes to provide you with
+            the right kind of nutrition, both macronutrients (carbohydrates,
+            proteins, and fats) and micronutrients (vitamins and minerals).
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What if I don’t like the nutrition recommendations?</h3>
+
+          <p class="answer">
+            Next to every recommendation, we offer a chance to change the meal.
+            Every suggestion comes with almost 9 alternate options for you to
+            select. Pick any one of them in the place of your current
+            recommendation, and the Lori app takes care of the tracking
+            accordingly. Do write to us if you have a specific dish that you
+            would like us to include in your regime at
+            <a href="mailto:lori@lori.health">lori@lori.health</a>. We promise
+            to work on it!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            I am looking to lose weight. Can you promise me that I will lose
+            5-10 kgs in a month?
+          </h3>
+
+          <p class="answer">
+            Weight is not an issue but is a symptom of an underlying one. Lori
+            promotes a healthy lifestyle, part of which is to help you manage
+            your weight. The nutrition regime helps you healthily manage your
+            weight and will never put you on any crash diets. You don’t lose
+            weight and become healthy, but you become healthy and lose weight in
+            the process. The funda is that once you start a health regime, your
+            weight will be certainly under control. Cause and effect, my friend!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I know the nutritional information of my food?</h3>
+
+          <p class="answer">
+            Every meal has the nutrient information displayed on the ‘recipe
+            card’, and you can access it by clicking on the dish. The recipe
+            card contains information on macronutrients such as carbohydrates,
+            proteins, and fats as well as the micronutrients such as vitamins
+            and minerals. Please let us know if you require any additional
+            information.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How should I be tracking my diet?</h3>
+
+          <p class="answer">
+            The trackers in the app help track of your meals and the diet
+            regime. You can track the information about macro nutrients as well
+            as micronutrients along with calories intake.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            I am allergic and have an existing clinical issue. Can I still
+            subscribe?
+          </h3>
+
+          <p class="answer">
+            Of course! We make a note of your allergies and any clinical
+            concerns before the diet is designed for you. You can share your
+            existing medical information with us for us to understand the
+            severity and complexity of your clinical issues.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            I love hanging out with my friends and have an occasional drink.
+            Does this affect my diet regime?
+          </h3>
+
+          <p class="answer">
+            Alcohol is certainly detrimental, especially in case of existing
+            clinical conditions. Be mindful of the consumption.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How much does Lori app subscription cost ?</h3>
+
+          <p class="answer">
+            Lori app offers a free 7-day full access trial and a subscription
+            plan once the trial expires. The pricing for the subscription is as
+            below:<br />
+            1 Month Subscription: Rs. 299/month <br />
+            3 Month Subscription: Rs. 199/Month <br />
+            6 Month Subscription: Rs. 149/Month <br />
+            12 Month Subscription: Rs. 99/Month <br /><br />
+            It is a prepaid subscription for the entire period that you are
+            looking to subscribe. For example, 12-month subscription charges are
+            Rs. 99 x 12 = Rs. Rs. 1,188, payable at the time of purchase. You
+            can purchase the subscription anytime on the app by accessing the
+            “Buy” button on the taskbar
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            What are the additional services that are not included in the
+            subscription? How much do they cost ?
+          </h3>
+
+          <p class="answer">
+            The Lori app offers additional services alongside a personalised
+            health plan. You can purchase DNA tests and blood tests on the app
+            at any time, by accessing the “Buy” button on the taskbar. <br />
+            The price for the DNA tests starts from Rs. 7,500 and the blood
+            tests from Rs. 300.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            Is there a trial period? What services can I avail in the trial
+            version?
+          </h3>
+
+          <p class="answer">
+            Yes, we offer a free 7-day full access trial. You can access all the
+            app features in the trial period and get a full Lori experience,
+            including an interaction with your accountability coach.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            What happens if I don’t subscribe after the trial period ends?
+          </h3>
+
+          <p class="answer">
+            We believe you will like us, but we do understand that we might not
+            be everyone’s favourite. Even if you don’t subscribe, you will have
+            access to several features of the app under the ‘Free plan’ such as
+            clinical metrics trackers, fasting and menstrual trackers, blood
+            test and DNA test information. You can subscribe anytime to access
+            the personalised health plans and interact with your accountability
+            coach.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How does Lori ensure my data is safe and private?</h3>
+
+          <p class="answer">
+            Lori follows international standard for data protection and is
+            compliant with many of the laws under data protection and
+            compliance.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who has access to my data?</h3>
+
+          <p class="answer">
+            Only your accountability coach and you have access to your data. No
+            one else.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where can I download the Lori app?</h3>
+
+          <p class="answer">
+            You can download the Lori app from either AppStore or Play Store.
+            You can click on the “Download Now” button on this page to direct
+            you to the respective store pages.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I sign up for Lori’s personalised health plan?</h3>
+
+          <p class="answer">
+            You can sign up using your phone number, Gmail, Facebook ID, and
+            LinkedIn ID.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What do I do after I have signed up?</h3>
+
+          <p class="answer">
+            Once you have given us the information while signing up, the app
+            creates your first personalised health plan for you. Make sure to
+            follow the nutrition recommendations. And don’t forget to “complete
+            your day” every day to see your nutrition and activity profile,
+            along with achieving an increase in the health score. You can get
+            started with an intermittent fasting regime if you are interested.
+            As a female, you can track your periods. You can also order a blood
+            test or DNA test from the Buy Screen. You can get reminders for your
+            medications and appointments as well.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can I cancel a subscription?</h3>
+
+          <p class="answer">
+            Sorry, once you subscribe to the app you cannot cancel the
+            subscription
+          </p>
+
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who are the accountability coaches?</h3>
+
+          <p class="answer">
+            Lori accountability coaches are trained to interact with you, to
+            help you be your best healthy self. All our coaches are certified
+            clinical nutritionists with experience in helping patients to
+            manage, reverse and prevent lifestyle diseases. Your accountability
+            coach will reach out to you once he/she is assigned to introduce
+            themselves. They will track your progress and activity through the
+            app and will be your guiding hand to increase your health score.
+            They are here to make sure you don’t fall off the wagon, and that
+            your health score doesn’t decline.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Does everyone get an accountability coach?</h3>
+
+          <p class="answer">
+            Yes, of course. Everyone is assigned an accountability coach as soon
+            as they sign up. You can see the accountability coach’s information
+            on the Health Score tab on your app’s home screen.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 general">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            How do I communicate with my accountability coach? What will be the
+            interaction with the accountability coach like?
+          </h3>
+
+          <p class="answer">
+            Your accountability coach will reach out to you when he/she is
+            assigned to you after you sign up to introduce himself/herself. They
+            will explain how Lori helps you manage, reverse, or prevent
+            lifestyle diseases, and answer your questions on how the app can
+            help you be your best healthy self. You can WhatsApp your coach on
+            their contact number during the business hours 10 AM – 6 PM or use
+            the central WhatsApp line +91 915-201-7765 with your queries.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- General question end -->
+
+        <!-- PCOS questions start -->
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 pcos">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can Lori app help PCOS patients?</h3>
+
+          <p class="answer">
+            You would enter your personal information, preferences, and other
+            health-related factors. Lori will work her magic and create a
+            personalized health plan for you. You get to see what the plan is,
+            and track your health through the app.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 pcos">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are the different tools that can help me?</h3>
+
+          <p class="answer">
+            We have built-in trackers (clinical metrics trackers, menstrual
+            tracker) for you to take care of your PCOS. There are also
+            medications and appointments that you can add and Lori helps you
+            with the timely reminders. <br /><br />
+            For adding medications, press the hamburger menu (the one that looks
+            like three lines, stacked one on top of the other) and look for the
+            ‘medications’ tab. You can enter the dosage and frequency of any
+            number of medications that you take, and the app reminds you when it
+            is time to take the medication, every one of them. <br /><br />
+            For appointments, press the hamburger menu (the one that looks like
+            three lines, stacked one on top of the other) and look for the
+            appointments tab. You can enter any number of appointments you have,
+            and the app sends you a reminder before the appointment time.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 pcos">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is it really possible to reverse PCOS?</h3>
+
+          <p class="answer">
+            Yes, it is. We have helped several thousand women with PCOS in
+            various ways. PCOS can be reversed by improving your insulin
+            sensitivity and your metabolism, which in turn would lead to a
+            reduction in weight and will help you achieve a normal menstrual
+            cycle. The right combination of diet, exercise and sleep will get
+            you to the finish line. <br /><br />
+            However, please do note that this isn’t a cure but a remission.
+            Certain lifestyle changes can bring back the symptoms.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 pcos">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How long does it take to reverse PCOS?</h3>
+
+          <p class="answer">
+            The time it takes to reverse PCOS varies from one person to another,
+            and is dependent on their lifestyle, current health condition,
+            including other comorbidities (other clinical issues). We have
+            observed that it takes an average of 3-6 month period.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- pcos question end -->
+
+        <!-- diabetes questions start -->
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 diabetes">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How long does it take to reverse Diabetes?</h3>
+
+          <p class="answer">
+            The time it takes to reverse diabetes varies from one person to
+            another, and is dependent on their lifestyle, current health
+            condition, including other comorbidities (other clinical issues).
+            However, you will start to see improvement in your blood sugar
+            levels within 4 weeks.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 diabetes">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is it really possible to reverse Diabetes?</h3>
+
+          <p class="answer">
+            Yes, of course. We have helped several thousand individuals with
+            Diabetes in various ways. Diabetes can be reversed by improving your
+            insulin sensitivity and your metabolism, which in turn would lead to
+            a reduction in weight and will help you achieve a normal blood sugar
+            level and HbA1c levels. The right combination of diet and exercise
+            will get you to the finish line.
+            <br />
+            <br />
+            However, please do note that this isn’t a cure but a remission.
+            Certain lifestyle changes can bring back the symptoms
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 diabetes">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are the different tools that can help me?</h3>
+
+          <p class="answer">
+            We have built-in trackers for you to take care of your diabetes.
+            There are also medications and appointments that you can add and
+            Lori helps you with the timely reminders. <br /><br />
+            For adding medications, press the hamburger menu (the one that looks
+            like three lines, stacked one on top of the other) and look for the
+            ‘medications’ tab. You can enter the dosage and frequency of any
+            number of medications that you take, and the app reminds you when it
+            is time to take the medication, every one of them. <br />
+            <br />
+            For appointments, press the hamburger menu (the one that looks like
+            three lines, stacked one on top of the other) and look for the
+            appointments tab. You can enter any number of appointments you have,
+            and the app sends you a reminder before the appointment time.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 diabetes">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can Lori app help Diabetes patients?</h3>
+
+          <p class="answer">
+            You would enter your personal information, preferences, and other
+            health-related factors. Lori will work her magic and create a
+            personalized health plan for you. You get to see what the plan is,
+            and track your health through the app.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- diabetes question end -->
+
+        <!-- cholestrol questions start -->
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 cholestrol">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How long does it take to reverse cholesterol issues?</h3>
+
+          <p class="answer">
+            The time it takes to reverse cholesterol issues varies from one
+            person to another, and is dependent on their lifestyle, current
+            health condition, including other comorbidities (other clinical
+            issues). We have observed that it takes an average of 3-6 month
+            period, and women take longer time to do this than men do. However,
+            you will start to see improvement in your blood sugar levels within
+            4 weeks.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 cholestrol">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is it really possible to reverse cholesterol issues?</h3>
+
+          <p class="answer">
+            Yes, of course. We have helped several thousand individuals with
+            cholesterol issues in various ways. Cholesterol issues can be
+            reversed by the help of right combination of diet and exercise. It
+            is also especially important to stay away from addictions like
+            nicotine and alcohol to help aid the reversal process. <br />
+            <br />
+            However, please do note that this isn’t a cure but a remission.
+            Certain lifestyle changes can bring back the symptoms.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 cholestrol">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are the different tools that can help me?</h3>
+
+          <p class="answer">
+            We have built-in trackers for you to take care of your cholesterol
+            issues. There are also medications and appointments that you can add
+            and Lori helps you with the timely reminders.
+            <br />
+            <br />
+            For adding medications, press the hamburger menu (the one that looks
+            like three lines, stacked one on top of the other) and look for the
+            ‘medications’ tab. You can enter the dosage and frequency of any
+            number of medications that you take, and the app reminds you when it
+            is time to take the medication, every one of them. <br />
+            <br />
+            For appointments, press the hamburger menu (the one that looks like
+            three lines, stacked one on top of the other) and look for the
+            appointments tab. You can enter any number of appointments you have,
+            and the app sends you a reminder before the appointment time
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 cholestrol">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can Lori app help patients with cholesterol issues?</h3>
+
+          <p class="answer">
+            You would enter your personal information, preferences, and other
+            health-related factors. Lori will work her magic and create a
+            personalized health plan for you. You get to see what the plan is,
+            and track your health through the app.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- cholestrol question end -->
+
+        <!-- menstrual questions start -->
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What does the Lori Menstrual Cycle Tracker tell me?</h3>
+
+          <p class="answer">
+            The tracker provides with information on which phase of the
+            menstrual cycle are you in. The tracker is also connected to your
+            personalised health plan and triggers new set of recommendations
+            when you log the start or end of a period.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can I log my past periods?</h3>
+
+          <p class="answer">
+            No, we don’t have that feature yet, but we are working on it.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can I edit an already logged period?</h3>
+
+          <p class="answer">
+            Unfortunately, no. We don’t allow you to edit an already logged
+            period.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can I log the start/end of my period?</h3>
+
+          <p class="answer">
+            On the Menstrual Health Tracker, log your period in by clicking on
+            the ‘I have started my period’ button, when you start your period.
+            Click on ‘I ended my period’ when your period ends.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I get started with Lori Menstrual Cycle Tracker?</h3>
+
+          <p class="answer">
+            During the sign-up process, you will have come across a menstrual
+            health questionnaire. The information that you provide here helps us
+            to predict your cycle better.
+            <br />
+            <br />
+            On the Menstrual Health Tracker, log your period in by clicking on
+            the ‘I have started my period’ button, when you start your period.
+            Click on ‘I ended my period’ when your period ends
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Why should I track my period?</h3>
+
+          <p class="answer">
+            Menstrual cycle is part of your health, and you might want to track
+            it because of clinical conditions such as thyroid issues PCOS, or
+            because you are looking to conceive or just to keep track your
+            general health. You can use the menstrual cycle tracker to track
+            your periods and understand the changes that your body is going
+            through. Along with tracking, Lori modifies your health plan when
+            you log in your cycle and periods, to help you with menstrual
+            discomforts like cramps and aches. Do watch out for more interesting
+            updates, as we build our menstrual health solution to be a more
+            robust one and more useful to you! And feel free to let us know if
+            you have a specific ask regarding menstruation, write to us at
+            <a href="mailto:lori@lori.health">lori@lori.health</a>.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Why is my period late?</h3>
+
+          <p class="answer">
+            An average menstrual cycle is 24 days, i.e., it takes about 24 days
+            for your period to start, from the date of your last period. This
+            cycle length, in reality, varies from 21 – 40 days.
+            <br />
+            <br />
+            A period is officially considered late if it is more than 6 weeks
+            since your last period. A period can be late because of multiple
+            reasons other than pregnancy. Stress, weight fluctuations, obesity,
+            thyroid issues, clinical conditions such as PCOS, birth control,
+            chronic diseases like diabetes can throw off your menstrual cycle.
+            <br />
+            <br />
+            If you are around 40 years of age, you can also miss periods due to
+            an early perimenopause. Most women begin menopause between ages 45
+            to 55.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How does period tracking help with getting pregnant?</h3>
+
+          <p class="answer">
+            The menstruation tracker helps you keep track of your periods as
+            well your ovulation phases. The health plan is modified in order to
+            help you conceive by making sure that you are eating the right
+            nutrients that your body needs in the stage.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How does period tracking help with PCOS?</h3>
+
+          <p class="answer">
+            With PCOS, the body is in a state of hormonal imbalance which
+            affects your periods. Tracking the periods ensure if the PCOS regime
+            you are on is effective for you. Your periods becoming regular is
+            one of the signs to indicate the lessening impact of PCOS.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Does menstrual tracking help me conceive a boy/girl/twins?</h3>
+
+          <p class="answer">
+            Tracking your menstruation cycle helps you to identify the
+            ‘ovulation phase’ of your cycle. Ovulation phase represents the days
+            when you are at your most fertile self for conception. You can find
+            this information on the menstrual tracker.
+            <br />
+            <br />
+            There is no scientifically proven way to choose the sex of the baby
+            or the number of babies, if you are conceiving naturally. Good luck
+            with your conception!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can Lori help me if I am looking to conceive?</h3>
+
+          <p class="answer">
+            Your personalised nutrition recommendations would include foods that
+            will help you to conceive. Please refrain from consuming alcohol,
+            nicotine and any products with heavy metals or contaminants (e.g.,
+            mercury) in this period.
+            <br />
+            <br />
+            The menstrual tracker helps you to keep track of your fertility
+            window to aid in your conception. Make sure to log your periods to
+            help us predict your ovulation phase as accurately as possible.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 menstrual">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>I am in menopause. How does Lori help me?</h3>
+
+          <p class="answer">
+            Menopause is the stopping of your menstrual cycle. Most women
+            experience menopause in their 50s, but genetics or underlying
+            conditions might trigger an early onset.
+            <br />
+            <br />
+            Your personalised nutrition recommendations would include foods that
+            will help you to transition through the menopause. You can also use
+            the menstrual tracker to keep track of your sporadic periods to help
+            when you go for your doctor consultation.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- menstrual question end -->
+
+        <!-- bp questions start -->
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 bp">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How can Lori app help hypertensive patients?</h3>
+
+          <p class="answer">
+            You would enter your personal information, preferences, and other
+            health-related factors. Lori will work her magic and create a
+            personalized health plan for you. You get to see what the plan is,
+            and track your health through the app.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 bp">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are the different tools that can help me?</h3>
+
+          <p class="answer">
+            We have built-in trackers for you to take care of your blood
+            pressure issues. There are also medications and appointments that
+            you can add and Lori helps you with the timely reminders.
+            <br />
+            <br />
+            For adding medications, press the hamburger menu (the one that looks
+            like three lines, stacked one on top of the other) and look for the
+            ‘medications’ tab. You can enter the dosage and frequency of any
+            number of medications that you take, and the app reminds you when it
+            is time to take the medication, every one of them. <br />
+            <br />
+            For appointments, press the hamburger menu (the one that looks like
+            three lines, stacked one on top of the other) and look for the
+            appointments tab. You can enter any number of appointments you have,
+            and the app sends you a reminder before the appointment time.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 bp">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is it really possible to reverse hypertension?</h3>
+
+          <p class="answer">
+            Yes, of course. Hypertension can be reversed by the help of right
+            combination of diet and exercise. It is also especially important to
+            stay away from addictions likecaffeine, nicotine and alcohol to help
+            aid the reversal process.
+            <br />
+            <br />
+            However, please do note that this isn’t a cure but a remission.
+            Certain lifestyle changes can bring back the symptoms.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- bp question end -->
+
+        <!-- dna questions start -->
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are my payment options?</h3>
+
+          <p class="answer">
+            You can pay with anycredit card or debit card (Visa, Mastercard,
+            Amex, Diners, Rupay). We also support Net Banking with over 50
+            banks, UPI, Online wallets, and NEFT/RTGS payments. We will continue
+            to add newer payment methods
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is GST applicable on the DNA tests?</h3>
+
+          <p class="answer">Yes, there is an 18% GST charge on the tests.</p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How much does DNA testing cost?</h3>
+
+          <p class="answer">
+            We offer various DNA tests whose price range is between Rs. 7,500 –
+            Rs. 25,000, depending on the various gene markers they analyse.
+            Please refer to the list of tests on the app’s Buy Screen and look
+            for what is suitable to you. There is an 18% GST charge on the
+            tests.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is the return and refund policy?</h3>
+
+          <p class="answer">
+            There is no return of the test kit and there is no refund for that.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can I change or cancel my DNA Test order?</h3>
+
+          <p class="answer">
+            Unfortunately, no. Once the order is placed, a test kit is shipped
+            to you, and cannot be changed or cancelled.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Will I receive a report?</h3>
+
+          <p class="answer">
+            Yes, you can download a PDF report of your results on the app.
+            Furthermore, your report is updated regularly in accordance with
+            current research and databases registered worldwide and you will
+            receive free updates, as and when we add new conditions or upgrade
+            to a different database. A fresh sample is not required.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where do I access the DNA test results on the Lori app?</h3>
+
+          <p class="answer">
+            You can access the DNA results under the ‘Preventive Health’ panel
+            in your health profile under the hamburger menu.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is it true that DNA can tell me about future disease risks?</h3>
+
+          <p class="answer">
+            Yes. We offer a cardiometabolic risk check that gives you a snapshot
+            of your genetic response to cardiac and metabolic diseases such as
+            type 2 diabetes.
+            <br />
+            <br />
+            The genetic test is to know your genetic predisposition of the
+            diseases. Everyone of us is vulnerable to almost all kinds of
+            diseases. The aim of this test is to provide you with all the
+            information about future disease risks, for you to act today. Please
+            do note that the ‘future risk’ does not in any way indicate the
+            occurrence of disease for sure. It is only a potential risk.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What can my DNA tell me about myself?</h3>
+
+          <p class="answer">
+            Oh, yes curious soul, we love your curiosity! DNA testing or
+            nutrigenetic testing, as it is scientifically called, analyses the
+            response of our DNA markers to the various nutrients. Combined with
+            nutrigenomics, it also helps you understand how different foods may
+            interact with specific genes to increase the risk of common chronic
+            diseases such as type-2 diabetes, obesity, stroke, and certain
+            cancers. <br />
+            <br />
+            Our DNA test panel is extensive and covers a multitude of health
+            factors – nutrition, fitness, immunity, cardio-metabolic risk, skin
+            health and certain cancers. Although the DNA test can provide
+            important information for diagnosing, it doesn’t really reflect the
+            current state of your body. Results in some cases can be
+            inconclusive and in some, testing might cause stress and anxiety.
+            <br />
+            <br />
+            Please be assured that the DNA test is another layer of information
+            that we use to personalize the health solution for you and is in no
+            way a mandatory requirement.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is the accuracy of the Lori DNA Test results?</h3>
+
+          <p class="answer">
+            The DNA results are based on scientific processes and the outcome is
+            dependent on the quality of the DNA sample received from you. Please
+            make sure to follow the instructions in the test kit during the
+            process of sample collection. If the quality of the sample is
+            sub-standard, the results will not be accurate.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What kind of privacy protection do I have?</h3>
+
+          <p class="answer">
+            When you receive a test kit from us, you will be asked to provide
+            your consent to your DNA sample (and data) to be included for our
+            research purposes. If you do not wish us to include your data,
+            simply "opt-out" of the same by selecting that option in the consent
+            form. Except for your accountability coach, no one has active access
+            to your information.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where is the DNA testing service available?</h3>
+
+          <p class="answer">
+            We use courier services to ship the DNA test kit to you, and these
+            services are available across India.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where to buy Lori’s DNA kit?</h3>
+
+          <p class="answer">
+            You can order a DNA test kit by accessing the “Buy” button in
+            taskbar. Select the test that you would wish to order, and we will
+            ship the kit to you at your address.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Why does Lori need saliva samples?</h3>
+
+          <p class="answer">
+            Saliva sample is one of the best ways for us to obtain sufficient
+            quantities of your DNA for our analysis. It is painless,
+            non-invasive, and very convenient as compared to a blood sample.
+            <br />
+            <br />
+            The sample goes through various processes as part of the testing and
+            analysis at our labs
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who can use the Lori DNA kit?</h3>
+
+          <p class="answer">
+            Anyone can order a test. DNA tests give you information on your
+            ability to digest nutrients, what kind of exercise suits you, what
+            is your immunity profile, and if you are at a risk for diseases.
+            Even kids can take the DNA test. It is painless and non-invasive
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 dna">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How does Lori DNA testing work?</h3>
+
+          <p class="answer">
+            Our testing process is fairly simple. We offer a pre-consult for us
+            to understand your lifestyle, current food and fitness regimes and
+            family history. A sample kit is shipped to you, and once you collect
+            the saliva sample, you can ship it back to our labs. And don’t
+            worry, the shipping is paid for by us. Once we have the sample in
+            the lab, we run a multitude of test, and with the test results in
+            hand, we prepare an action plan for you. Your assigned nutritionist
+            reaches out to you for a comprehensive consult to walk you through
+            your results and action plans and will help you make changes to your
+            lifestyle, food, and fitness regime. We also will be following up
+            with you for a period of 12 weeks to ensure you aren’t facing any
+            issues and are able to transition to a path of ‘healthy living.’
+            <br />
+            <br />
+            For the testing and recommendation process, we are partnered with
+            NMC Genetics, a state-of-the-art genomics laboratory led by a unique
+            team of highly skilled molecular biologists, bioinformaticians and
+            data scientists. NMC Genetics’ state of the art molecular laboratory
+            follows international quality guidelines and standards for handling
+            samples and DNA test processes. NMC Genetics is a subsidiary of NMC
+            Healthcare LLC. the largest private healthcare company in the UAE
+            and ranks amongst the leading fertility service providers in the
+            world. NMC was the first company from Abu Dhabi to list on the
+            London Stock Exchange and is now part of the premium FTSE 100 Index,
+            an elite club of top 100 blue-chip companies by market cap. We are
+            happy to help with more information if you would require. Please
+            reach out to us at
+            <a href="mailto:lori@lori.health">lori@lori.health</a>.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- dna question end -->
+
+        <!-- blood-test questions start -->
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How does Lori blood tests work?</h3>
+
+          <p class="answer">
+            To bring the “at home testing” to you, we have partnered with
+            India’s largest providers of health test at-home service, and DMLT &
+            WHO certified phlebotomists. The blood sample is collected by and
+            processed by our partner labs.
+            <br />
+            <br />
+            Your phlebotomist will contact you once we assign him/her to your
+            order.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who can order the blood tests?</h3>
+
+          <p class="answer">
+            Anyone can order the blood tests. We do not need a prescription for
+            ordering blood tests.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where to order the blood tests?</h3>
+
+          <p class="answer">
+            Click on the “Buy” button on the task bar that shows up on your home
+            screen and purchase the package that is most suitable for you. You
+            will be notified when the results are available, and you can access
+            them on the app
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where is the blood test service available?</h3>
+
+          <p class="answer">
+            Different tests could be available in different regions, and the
+            availability of slots could vary from one location to another.
+            Please check the availability of a particular test from the ‘Buy’
+            button located on the taskbar in the app.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Where do I access the blood test results on the Lori app?</h3>
+
+          <p class="answer">
+            You can access the list of blood tests by clicking on the ‘Buy’
+            button on the taskbar. We continue to add new tests.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Will I receive a report?</h3>
+
+          <p class="answer">
+            Yes, you can download your reports, both historical and current,
+            from the ‘Preventive Health’ panel in the health profile section in
+            the hamburger menu
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How much does blood test services cost?</h3>
+
+          <p class="answer">
+            The price varies based on the blood test. To check the pricing, you
+            can access the list of blood tests by clicking on the ‘Buy’ button
+            on the taskbar. We continue to add new tests.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Is GST applicable on the blood tests?</h3>
+
+          <p class="answer">
+            No. We follow the Government guidelines on medical tests, which are
+            exempt of any GST.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What are my payment options?</h3>
+
+          <p class="answer">
+            You can pay with any credit card or debit card (Visa, Mastercard,
+            Amex, Diners, Rupay). We also support Net Banking with over 50
+            banks, UPI, Online wallets, and NEFT/RTGS payments. We will continue
+            to add newer payment methods.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can I change or cancel my order?</h3>
+
+          <p class="answer">
+            You can access your order on the “Order Summary” in the hamburger
+            menu and make changes to the order, reschedule, or cancel it within
+            the stipulated time to avoid charges .
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 blood-test">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is the refund policy?</h3>
+
+          <p class="answer">
+            We will process a refund via NEFT in your bank account (for all
+            modes of payment – credit card, debit card, UPI or other), within 10
+            working days.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- blood-test question end -->
+
+        <!-- fasting questions start -->
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Do I need to make any changes to my diet?</h3>
+
+          <p class="answer">
+            Your personalised health plan will take care of the diet if you are
+            fasting. The recommendations are based on your fasting cycles.
+            <br />
+            <br />
+            If you are using only the fasting tracker and did not subscribe for
+            the personalised plan, here are a few guidelines to help you with
+            your fasting. <br /><br />
+            - Drink plenty of water during your fasting cycle. You can also have
+            an herbal tea or black coffee, without any sweeteners. <br />
+            <br />
+            - When you break your fast, make sure you eat a good portion of
+            vegetables. Do not consume fatty foods as they may cause you
+            digestive issues. <br />
+            <br />
+            - Make sure to include all food groups (unless you are allergic to
+            any) in your food to ensure that you consume the vitamins and
+            minerals that your body needs.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I change my fasting cycle?</h3>
+
+          <p class="answer">
+            On the fasting tracker, there is a dropdown option to select and
+            change your fasting cycle. You cannot change a cycle if you have
+            already started a fast though!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I get started?</h3>
+
+          <p class="answer">
+            The fasting tracker helps you visualize the process that your body
+            undergoes while fasting. Click “start the fast” when you are ready
+            to start the fast after you have finished eating a meal. Because you
+            have selected a fasting cycle already, we will notify you when your
+            fast is coming to an end. Also, the tracker provides you with
+            information on what is happening in your body while you are fasting.
+            The history graphs show you the fasting history and the number of
+            times that you have achieved the goal that you have set for
+            yourself. Do watch out for more updates to help your fasting
+            experience become better. Write to us at
+            <a href="mailto:lori@lori.health">lori@lori.health</a> for any
+            suggestions or feedback.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            I am a new mother and currently breastfeeding. Can I do intermittent
+            fasting?
+          </h3>
+
+          <p class="answer">
+            While breastfeeding, you would require additional calories not fewer
+            to support the milk production. We do not advise breastfeeding
+            mothers to do an intermittent fasting regime.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Can kids do intermittent fasting?</h3>
+
+          <p class="answer">
+            No, we do not advise intermittent fasting for kids, as you are in a
+            growth phase. If you are struggling with body image issues or
+            looking to do an intermittent fasting to manage your weight, please
+            speak to your parents or guardians
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>I am diabetic. Does intermittent fasting help me?</h3>
+
+          <p class="answer">
+            Intermittent Fasting has proven effective in controlling the spikes
+            in blood sugar. But, before you start a fasting regime, please
+            consult with your physician
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What can I eat during the fast?</h3>
+
+          <p class="answer">
+            While you are fasting, you should drink plenty of water to make sure
+            you are not dehydrated. You can also have herbal teas (e.g., green
+            tea) or a black coffee (without any sweetener or sugar). Do not
+            consume any sweeteners or their substitutes and zero calorie drinks.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>How do I choose a fasting cycle?</h3>
+
+          <p class="answer">
+            On the fasting tracker, you can see a dropdown to select a fasting
+            cycle. You can use the below guide to select the one that suits you.
+            <br />
+            <br />
+            If you a newbie, start slowly, with a 12-14 hour fast. This fast is
+            relatively easy to follow as you probably are doing it without
+            realising it – e.g. If you take your dinner at 8PM and the next day
+            breakfast at 8AM, this indicates a 12 hour fast, if you don’t
+            consume anything else in this window. This cycle will help with
+            general detox and shows steady progress over time. You can do this
+            all your life, without any issues. <br />
+            <br />
+            If you are familiar with fasting, you can choose a 16-18 hour fast.
+            You can manage this with a little effort. Think of a regime where
+            you eat a dinner at 8pm and the next meal at 12pm the next day.
+            Because of the longer fast cycle, this fast has more benefits.
+            <br />
+            <br />
+            If you are already an expert, go ahead with a 20+ hour fast to push
+            yourself a bit further. Because your gut rests for an extended
+            period of time, it makes you feel more energetic and focused.
+            Despite the many benefits, we don’t recommend you do this every day.
+            <br />
+            <br />
+            Bottomline, giving your gut rest leads to many health benefits!
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>Who can do intermittent fasting?</h3>
+
+          <p class="answer">
+            Intermittent Fasting is suitable for adults, based on scientific
+            research. It is not advisable for those in periods of rapid growth,
+            such as children and adolescents.
+            <br />
+            <br />
+            If you are pregnant or breastfeeding, intermittent fasting is not
+            advisable for you. <br />
+            <br />
+            Anyone with a chronic disease or elderly shouldn’t commence
+            intermittent fasting without guidance. If you have an existing
+            clinical concern, please consult with your physician to understand
+            the risks of intermittent fasting, should you have any
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>
+            I have never done a fast before. How do I know if intermittent
+            fasting suits me?
+          </h3>
+
+          <p class="answer">
+            Truthfully, everybody responds to fasting a little differently.
+            <br />
+            <br />
+            We should advice that intermittent fasting isn’t for everyone. In
+            case of an existing clinical condition, please consult with your
+            physician if it is advisable for you to be on one.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <div class="q-tile col-lg-3 col-md-5 col-sm-10 fasting">
+          <i class="fas fa-2x fa-share-alt"></i>
+          <h3>What is intermittent fasting? How does it work?</h3>
+
+          <p class="answer">
+            Intermittent fasting is not a diet but is a method of eating. It
+            falls in the concept of “not only what you eat is important, but
+            also when you eat is!”. The fasting method helps body undergo
+            various processes and help with efficient breakdown of stored fats.
+            The method is scientifically proven and has tons of research
+            attached to it.
+            <br />
+            <br />
+            You can start as a beginner with the basic fast cycle. The fasting
+            tracker reminds you and keeps you posted as to when to start and end
+            the fast and what is happening with your body while you fast! And
+            your health plan is altered to accommodate your fasting cycle, so
+            you know what you should eat when you stop the fast.
+          </p>
+          <h3 class="view">VIEW</h3>
+        </div>
+
+        <!-- fasting questions end-->
+      </div>
+      <h3 class="btn3" onclick="LoadMore()">Load More Results........</h3>
+      <h3 style="display: none" class="btn2" onclick="ShowLess()">Show Less</h3>
+    </section>
+    <div class="overlay"></div>
+
+    <div class="share">
+      <button>Social Link</button>
+      <button>Social Link</button>
+      <button>Social Link</button>
+    </div>
+
+    <div class="fimage"></div>
+
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+            <ul class="social list-unstyled" style="float: right">
+              <li>
+                <a href="https://wa.me/+919152017765"
+                  ><span class="fab fa-whatsapp" style="color: #01e675"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lori.healthglobal/"
+                  ><span style="color: #3b5998" class="fab fa-facebook"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="
+                  https://www.linkedin.com/company/lori-health/"
+                  ><span style="color: #0e76a8" class="fab fa-linkedin"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/lori.health/"
+                  ><span style="color: #f14843" class="fab fa-instagram"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Lori_Health"
+                  ><span style="color: #00acee" class="fab fa-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Manage</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./PCOS/pcos.html">PCOS</a></li>
+              <li><a href="./CHOLESTEROL/cholestrol.html">Cholesterol</a></li>
+              <li><a href="./BLOOD PRESSURE/bp.html">Blood Pressure</a></li>
+              <li><a href="./DIABETES/diabetes.html">Diabetes</a></li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Prevent</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./DNA/dna.html">DNA Testing</a></li>
+              <li>
+                <a href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+              </li>
+              <li>
+                <a href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>About</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./about us/about.html">About us</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Legal</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>&copy; 2021 All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap4.0.0/jquery-3.2.1.slim.min.js"></script>
+    <script src="./bootstrap4.0.0/popper.min.js"></script>
+    <script src="./bootstrap4.0.0/bootstrap.min.js"></script>
+    <script src="faq.js"></script>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+        // navbarColor();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          document.getElementById("appstore-icon").style.display = "block";
+
+          document.getElementById("playstore-icon").style.display = "block";
+          // document.getElementById("navbar-main").style.maxHeight = "80px";
+
+          // document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("appstore-icon").style.display = "none";
+          document.getElementById("playstore-icon").style.display = "none";
+          // document.getElementById("navbar-main").style.maxHeight = "unset";
+        }
+      }
+
+      function navbarColor() {
+        if (
+          document.body.scrollTop > 70 ||
+          document.documentElement.scrollTop > 70
+        ) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      }
+    </script>
+
+    <!-- <script>
+      
+  $(document).ready(function(){
+        if ($(window).width() < 767) {
+          document.getElementById("navbar-main").style.backgroundColor =
+              "#f7f7f7";
+         } 
+         else{
+          document.getElementById("navbar-main").style.backgroundColor =
+              "transparent";
+         }
+  });
+  </script> -->
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/20272274.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

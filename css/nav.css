@@ -1,0 +1,218 @@
+body {
+  background-color: #f7f7f7 !important;
+  font-family: "Roboto" !important ;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: -4px -6px 6px #ffffff, 4px 4px 10px #ceced1;
+  background-color: #f7f7f7;
+  color: #232263;
+  font-size: 14px;
+  top: 65px;
+}
+
+.unpressed-button {
+  position: relative;
+  background: transparent;
+  width: 92px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600 !important;
+  border: none;
+  letter-spacing: 1px !important;
+  margin: 20px;
+  color: black !important;
+  cursor: pointer;
+}
+.unpressed-button-b {
+  position: relative;
+  background: transparent;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600 !important;
+  border: none;
+  letter-spacing: 1px !important;
+  margin: 20px;
+  color: black !important;
+  cursor: pointer;
+}
+#navbar-main {
+  height: 85px !important;
+  background-color: transparent;
+}
+
+.unpressed-button:hover,
+.unpressed-button-b:hover {
+  background-color: #f7f7f7;
+  color: black !important;
+
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+.pressed-button {
+  text-align: center;
+  width: 92px;
+  margin: 20px;
+  cursor: pointer;
+  letter-spacing: 1px !important;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600 !important;
+  background: #f7f7f7;
+  box-shadow: inset 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff;
+}
+.pressed-button-b {
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+  letter-spacing: 1px !important;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600 !important;
+  background: #f7f7f7;
+  box-shadow: inset 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff;
+}
+
+.ripsey-blue {
+  color: #232263;
+}
+.ripsey-red {
+  color: #891619;
+}
+.app-unpressed-button {
+  position: relative;
+  box-shadow: 6px 4px 10px #7f1417, 0px 0px 0px #93181b;
+  background: #891619;
+
+  text-align: center;
+  padding: 5%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  letter-spacing: 0.8px;
+  margin: 20px;
+  color: white !important;
+  cursor: pointer;
+}
+.app-unpressed-button:hover {
+  background-color: #f7f7f7;
+  color: black !important;
+
+  box-shadow: inset 3px 9px 22px rgb(255 255 255),
+    inset 3px 4px 8px rgb(121 130 160 / 75%),
+    inset -8px 4px 8px rgb(121 130 160 / 75%);
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+.app-ic {
+  float: none;
+  max-width: 190px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.app-icon {
+  max-width: 160px;
+  width: 100%;
+}
+
+#QR {
+  max-width: 110px;
+}
+.bmargin-buttons {
+  margin-top: 10px;
+}
+
+.ios-play-icons {
+  position: relative;
+  box-shadow: 1px 1px 4px #808080, 2px 0px 2px #808080;
+  margin: 15px;
+  border-radius: 6px;
+  width: 120px !important;
+  cursor: pointer;
+}
+.border-shadow-download-icons {
+  box-shadow: 4px 4px 13px #808080;
+  border-radius: 6px;
+}
+#appstore-icon {
+  display: none;
+}
+#playstore-icon {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .unpressed-button {
+    width: unset;
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .pressed-button {
+    width: unset;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+
+  .ios-play-icons {
+    margin: 5px;
+  }
+  .dropdown-menu {
+    font-size: 15px;
+  }
+
+  /* Faq QnA */
+  .unpressed-button-b,
+  .pressed-button-b {
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  #navbar-main {
+    height: unset !important;
+    /* background-color: #f4f4f4;
+  }
+  .unpressed-button-b,
+  .pressed-button-b {
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 780px) {
+  #navbar-main {
+    /* height: unset !important; */
+    /* background-color: #f4f4f4; */
+  }
+  .unpressed-button-b,
+  .pressed-button-b {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #navbar-main {
+    height: unset !important;
+  }
+
+  .ios-play-icons {
+    margin: 5px;
+  }
+  .unpressed-button-b,
+  .pressed-button-b {
+    margin: 5px;
+  }
+}
+
+.disabled {
+  /* pointer-events: none;
+  opacity: 0.5; */
+}

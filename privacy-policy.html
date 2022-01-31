@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1353*548 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f7f7f7 !important;
+        font-family: "Roboto" !important ;
+      }
+
+      .wavecontainer {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        /* background: url(./images/wave.png) no-repeat; */
+        background-size: cover;
+      }
+      .app-ic {
+        float: none;
+        max-width: 190px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+      .app-icon {
+        max-width: 160px;
+        width: 100%;
+      }
+
+      #QR {
+        max-width: 110px;
+      }
+      .bmargin-buttons {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="./bootstrap4.0.0/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/new.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/privacy-policy.css" />
+    <title>Lori</title>
+  </head>
+  <body>
+    <nav
+      id="navbar-main"
+      style="background: #f7f7f7 !important"
+      class="navbar navbar-expand-lg fixed-top navbar-light text-center"
+    >
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./images/logo-update.png" style="width: 100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="appstore-icon">
+            <a
+              class="nav-link disabled"
+              href="https://apps.apple.com/us/app/ripsey/id1547471514?mt=8"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/ios1.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item" id="playstore-icon">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.ripsey"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="./images/google-play.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./PCOS/pcos.html">PCOS</a>
+                <a class="dropdown-item" href="./CHOLESTEROL/cholestrol.html"
+                  >Cholesterol
+                </a>
+                <a class="dropdown-item" href="./BLOOD PRESSURE/bp.html"
+                  >Blood pressure</a
+                >
+                <a class="dropdown-item" href="./DIABETES/diabetes.html"
+                  >Diabetes</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Prevent
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="./DNA/dna.html">DNA Testing</a>
+                <a
+                  class="dropdown-item"
+                  href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./blog/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="./about us/about.html"
+              >About us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wavecontainer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="privacy-policy">
+              <h1>Lori Privacy Policy</h1>
+              <p>Last updated on June 11, 2021</p>
+              <p>
+                Your privacy is important to us. It is Lori Health's (also
+                referred as “we” or “the Company”) policy to respect your
+                privacy regarding any information we may collect from you
+                through our website and app, Lori. We are committed to
+                protecting such information through our compliance with our
+                privacy policies.
+              </p>
+              <p>
+                We only ask for personal information when we truly need it to
+                provide a service to you. We collect it by fair and lawful
+                means, with your knowledge and consent. We also let you know why
+                we’re collecting it and how it will be used.
+              </p>
+              <p>
+                We only retain collected information for as long as necessary to
+                provide you with your requested service. What data we store,
+                we’ll protect within commercially acceptable means to prevent
+                loss and theft, as well as unauthorized access, disclosure,
+                copying, use or modification.
+              </p>
+              <p>
+                We don’t share any personally identifying information publicly
+                or with third-parties, except when required to by law.
+              </p>
+
+              <p>
+                Our app may link to external sites that are not operated by us.
+                Please be aware that we have no control over the content and
+                practices of these sites, and cannot accept responsibility or
+                liability for their respective privacy policies.
+              </p>
+
+              <p>
+                You are free to refuse our request for your personal
+                information, with the understanding that we may be unable to
+                provide you with some of your desired services.
+              </p>
+
+              <p>
+                Your continued use of our app will be regarded as acceptance of
+                our practices around privacy and personal information. If you
+                have any questions about how we handle user data and personal
+                information, feel free to contact us at
+                <a href="mailto:lori@lori.health">lori@lori.health</a>.
+              </p>
+
+              <p><strong> This policy describes: </strong></p>
+              <ol>
+                <li>
+                  The type of information that we collect on our website and app
+                </li>
+                <li>
+                  The practices that we enforce for the collection, usage,
+                  protection and disclosure of such information
+                </li>
+                <li>User restrictions</li>
+              </ol>
+
+              <h4>1. INFORMATION COLLECTED BY LORI</h4>
+              <ol type="a">
+                <li>
+                  We collect and store personal information that you provide as
+                  part of creating an account, as well as the information that
+                  is created/generated as part of you availing various services
+                  provided on the app.
+                </li>
+                <li>
+                  With regard to creating your account, we would collect
+                  information such as your name, sex, date of birth, age, phone
+                  number, email address, social media handle (if you log in
+                  using a social media account), activity, clinical status,
+                  allergies, personal preferences (cuisines, veg/non veg) and
+                  clinical metrics history, if available.
+                </li>
+                <li>
+                  In case you log in using a social media account, we fetch and
+                  store the information from your social media accounts that is
+                  made available to us by you through these sign-in services.
+                </li>
+                <li>
+                  Additionally, in the course of your usage of the app, we or
+                  the third parties with whom we have contracted to provide
+                  services, may collect certain anonymous information from
+                  sources such as cookies, server log files, pixel tags, session
+                  duration, device models, operating systems, geography, first
+                  launches, app opens and updates, purchases and other similar
+                  technology-related metrics.
+                </li>
+                <li>
+                  When you use our location-enabled services (e.g. ordering a
+                  blood test from the app), we may collect and process
+                  information such as your mobile device’s GPS location and the
+                  time the location information is recorded. The location
+                  information could include latitude, longitude, altitude, of
+                  your mobile device. You can always disable the GPS tracking
+                  function or any other location tracking function through your
+                  device.
+                </li>
+                <li>
+                  With your permission, we may also record the browsing
+                  information such as how long you have visited a page on our
+                  website, what pages have you visited, ads that you have
+                  clicked, features that you have used, search terms that you
+                  have used and results that you have selected. This data is
+                  used for internal analytics and
+                  <strong> NOT for advertisement purposes</strong>.
+                </li>
+                <li>
+                  If you make purchases through our services, we may collect and
+                  store information about you to process your requests such as
+                  your phone number, address, email, billing information. We
+                  <strong>DO NOT</strong> store any card or bank account
+                  information at our end.
+                </li>
+                <li>
+                  We may collect and store the health data that we obtain
+                  through your purchases on blood tests, DNA tests and other
+                  diagnostic tests, in accordance with your consent. For our DNA
+                  testing service,
+                  <strong>we obtain your written consent</strong> separately
+                  when we collect the test sample. We or our third parties may
+                  use this information for research purposes only when you
+                  consent to it
+                </li>
+              </ol>
+
+              <h4>2. COLLECTION, USAGE, PROTECTION AND DISCLOSURE</h4>
+              <p>
+                We use the information we collect from you to understand our
+                users, administer our services, prevent technical problems, send
+                you communications, run contests, generate performance reports,
+                provide you with customer support, and for any other purpose
+                with your consent. We do not share the data collected from you
+                with a third-party for advertising purposes, or with a data
+                broker in any instance.
+              </p>
+              <p>
+                By accepting the Terms & Conditions and this Privacy Policy, you
+                expressly agree to our processes.
+              </p>
+
+              <ol type="a">
+                <li>
+                  We may record and share aggregate information of our users
+                  with selected clients, investors, partners and service
+                  providers, without disclosing individual names or identifying
+                  information of the users. In the event of a merger or an
+                  acquisition with another company, we reserve the right to
+                  transfer all data, including your personal information, that
+                  is in our possession at the time of such event to such
+                  acquiring party. Post the event, the privacy policy of the
+                  acquired party shall govern such data.
+                </li>
+                <li>
+                  We take all steps to comply with applicable laws ensure your
+                  information is stored in a secure environment protected from
+                  unauthorised access, modification or disclosure. While we
+                  strive our best to protect your information at all times, we
+                  cannot guarantee absolute security and shall not be liable to
+                  any breach of security by an outside party. It is also
+                  important for you to protect your personal information such as
+                  your username/login ID and password of the account as well as
+                  your computer or mobile device. We would also like to caution
+                  you about phishing attacks wherein unknown third parties seek
+                  to extract sensitive information from you posing as a genuine
+                  source. Please be careful in dealing with such correspondences
+                  and email us at
+                  <a href="mailto:lori@lori.health">lori@lori.health</a> in case
+                  of any such communication is generated in the Lori.
+                </li>
+                <li>
+                  The Company <strong>DOES NOT</strong> sell, rent, loan, trade,
+                  lease, or license any personal information collected from you
+                  or provided by you
+                  <strong>FOR ADVERTISEMENT PURPOSES</strong> .
+                </li>
+              </ol>
+
+              <h4>USER RESTRICTIONS</h4>
+              <p>
+                As mandated by Regulation 3(2) of the Information Technology
+                (Intermediaries Guidelines) Rules, we hereby caution and inform
+                you that you are not permitted to use the Website to host,
+                display, upload, modify, publish, transmit, update or share any
+                information that:
+              </p>
+
+              <ul type="square">
+                <li>
+                  belongs to another person and to which you do not have any
+                  right;
+                </li>
+                <li>
+                  is grossly harmful, harassing, blasphemous, defamatory,
+                  obscene, pornographic, paedophilic, libellous, invasive of
+                  another's privacy, hateful, or racially, ethnically
+                  objectionable, disparaging, relating or encouraging money
+                  laundering or gambling, or otherwise unlawful in any manner
+                  whatever;
+                </li>
+                <li>harm’s minors in any way;</li>
+                <li>
+                  infringes any patent, trademark, copyright or other
+                  proprietary rights;
+                </li>
+                <li>violates any law for the time being in force;</li>
+                <li>
+                  deceives or misleads the addressee about the origin of such
+                  messages or communicates any information which is grossly
+                  offensive or menacing in nature;
+                </li>
+                <li>impersonates another person;</li>
+                <li>
+                  contains software viruses or any other computer code, files or
+                  programs designed to interrupt, destroy or limit the
+                  functionality of any computer resource;
+                </li>
+                <li>
+                  threatens the unity, integrity, defence, security or
+                  sovereignty of India, friendly relations with foreign states,
+                  or public order or causes incitement to the commission of any
+                  cognisable offence or prevents investigation of any offence or
+                  is insulting any other nation;
+                </li>
+                <li>
+                  threatens public health or safety; promotion of cigarettes or
+                  any other tobacco products or consumption of intoxicant
+                  including alcohol and Electronic Nicotine Delivery System
+                  (ENDS) & like products that enable nicotine delivery except
+                  for the purpose & in the manner and to the extent, as may be
+                  approved under the Drugs and Cosmetics Act, 1940 and Rules
+                  made thereunder; and
+                </li>
+                <li>threatens critical information infrastructure.</li>
+              </ul>
+              <p>
+                In addition, the Company further cautions you to prohibit from:
+              </p>
+              <ul type="square">
+                <li>
+                  violating or attempting to violate the integrity or security
+                  of the website and the app any content on the website and the
+                  app;
+                </li>
+                <li>
+                  transmitting any information (including job posts, messages
+                  and hyperlinks) on or through the website or the app that is
+                  disruptive or competitive to the provision of services by the
+                  us;
+                </li>
+                <li>
+                  intentionally submitting on the website or the app any
+                  incomplete, false or inaccurate information;
+                </li>
+                <li>
+                  making any unsolicited communications to other users of the
+                  website or the app;
+                </li>
+                <li>
+                  using any engine, software, tool, agent or other device or
+                  mechanism (such as spiders, robots, avatars or intelligent
+                  agents) to navigate or search the website or the app;
+                </li>
+                <li>
+                  attempting to decipher, decompile, disassemble or reverse
+                  engineer any part of the website or the app;
+                </li>
+                <li>
+                  copying or duplicating in any manner any of the content or
+                  other information available on the website or the app;
+                </li>
+                <li>
+                  framing or hotlinking or deep-linking any content on the
+                  website or the app; and
+                </li>
+                <li>
+                   posting materials to any of the our social media pages or
+                  otherwise on social media, that are unlawful, fraudulent,
+                  libellous, slanderous, defamatory, abusive, harassing,
+                  threatening, obscene or infringing on the rights of any
+                  third-party, including intellectual property,
+                  privacy/confidentiality or publicity rights.
+                </li>
+              </ul>
+              <p>
+                We reserve the right to effect revisions/modifications to this
+                Privacy Policy, and any of its other policies or procedures
+                concerning the treatment of information collected through the
+                Website or the app, without prior notice. Any changes to this
+                Privacy Policy will become effective upon posting of the revised
+                Privacy Policy on the Website and the app. Access/use of the
+                Website and the app following the posting of such revised
+                Privacy Policy would be deemed to constitute your acceptance of
+                such revised Privacy Policy, then in effect.
+              </p>
+
+              <p>
+                This Privacy Policy and the Terms and Conditions of Use shall be
+                governed by and construed in accordance with the laws of India.
+                Any and all disputes arising from this Privacy Policy and the
+                Terms and Conditions of Use will be subject to arbitration to be
+                conducted by an independent sole arbitrator (who shall be a
+                retired judge/judicial officer) to be appointed by the Company.
+                The arbitration shall be conducted in accordance with the
+                provisions of the Arbitration and Conciliation Act, 1996 (as
+                amended). The arbitration shall be conducted in New Delhi and in
+                English language. Subject to arbitration, the jurisdictional
+                courts at New Delhi shall be entitled to grant interim
+                relief/injunction.
+              </p>
+              <p>
+                A printed version of this Privacy Policy and of any notice given
+                in electronic form shall be admissible in judicial or
+                administrative proceedings based upon or relating to this
+                Privacy Policy to the same extent and subject to the same
+                conditions as other business documents and records originally
+                generated and maintained in printed form.
+              </p>
+
+              <i style="color: gray"
+                >© 2021| Lori Food Tech Private Limited. All rights reserved.</i
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+    </div>
+
+    <!-- Testimonial -->
+
+    <!-- testimonail end -->
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+            <ul class="social list-unstyled" style="float: right">
+              <li>
+                <a href="https://wa.me/+919152017765"
+                  ><span class="fab fa-whatsapp" style="color: #01e675"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lori.healthglobal/"
+                  ><span style="color: #3b5998" class="fab fa-facebook"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="
+                https://www.linkedin.com/company/lori-health/"
+                  ><span style="color: #0e76a8" class="fab fa-linkedin"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/lori.health/"
+                  ><span style="color: #f14843" class="fab fa-instagram"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Lori_Health"
+                  ><span style="color: #00acee" class="fab fa-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Manage</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./PCOS/pcos.html">PCOS</a></li>
+              <li><a href="./CHOLESTEROL/cholestrol.html">Cholesterol</a></li>
+              <li><a href="./BLOOD PRESSURE/bp.html">Blood Pressure</a></li>
+              <li><a href="./DIABETES/diabetes.html">Diabetes</a></li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Prevent</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./DNA/dna.html">DNA Testing</a></li>
+              <li>
+                <a href="./INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+              </li>
+              <li>
+                <a href="./Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>About</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./about us/about.html">About us</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Legal</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="./terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>&copy; 2021 All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap4.0.0/jquery-3.2.1.slim.min.js"></script>
+    <script src="./bootstrap4.0.0/popper.min.js"></script>
+    <script src="./bootstrap4.0.0/bootstrap.min.js"></script>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+        // navbarColor();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          document.getElementById("appstore-icon").style.display = "block";
+
+          document.getElementById("playstore-icon").style.display = "block";
+        } else {
+          document.getElementById("appstore-icon").style.display = "none";
+          document.getElementById("playstore-icon").style.display = "none";
+          // document.getElementById("navbar-main").style.maxHeight = "unset";
+        }
+      }
+
+      function navbarColor() {
+        if (
+          document.body.scrollTop > 70 ||
+          document.documentElement.scrollTop > 70
+        ) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      }
+    </script>
+    <script>
+      // $(document).ready(function () {
+      //   if ($(window).width() < 767) {
+      //     document.getElementById("navbar-main").style.backgroundColor =
+      //       "#f7f7f7";
+      //   } else {
+      //     document.getElementById("navbar-main").style.backgroundColor =
+      //       "transparent";
+      //   }
+      // });
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/20272274.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

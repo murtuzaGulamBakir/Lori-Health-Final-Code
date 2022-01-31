@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+._tile_parent{
+    padding-top: 130px;
+ 
+}
+
+
+._tile_heading h3{
+    font-size: 2rem;
+   padding-bottom: 5px;
+   padding-top: 5px;
+    text-align: center;
+    color: #222162;
+    font-weight: 600;
+}
+._tile_heading p{
+    text-align: center;
+    color: #222162;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+._tile_heading{
+    
+   padding-top: 5px;
+   padding-bottom: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.shadow_out{
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+
+
+}
+.shadow_in{
+    box-shadow: inset 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+}
+._tile{
+  margin: 15px 30px;
+  height: 100px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+._tile h3{
+    color: #313075;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Accordion */
+.wrapper{
+max-width: 85vw;
+padding: 0 20px;
+background-color: #f7f7f7;
+}
+
+.faq-accordion{
+ justify-content: center;
+align-items: center;
+display: flex;
+padding-top: 70px;
+}
+
+.wrapper .parent-tab label{
+background-color: #f7f7f7;
+padding: 10px 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+border-bottom: 2px solid #313075;
+position: relative;
+z-index: 99;
+}
+
+
+.wrapper label span{
+    color: #222162;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.wrapper label .icon{
+   
+    color: #222162;
+    display: block;
+   
+}
+.wrapper label .icon i{
+font-size: 25px;
+
+}
+.wrapper .parent-tab .content p{
+    font-size: 18px;
+    color: #222162;
+    text-align: left;
+}
+.wrapper .parent-tab .content{
+ 
+    max-height: 0px;
+    overflow:hidden;
+    /* transition: all 0.4s ease-in-out; */
+    transition: all 0.4s ease-in-out;
+}
+.parent-tab  input:checked ~ label .icon i::before{
+    content: '\f107';
+    transition: all 0.6s ease-in-out;
+}
+.parent-tab input:checked~.content{
+    padding: 20px 10px 20px;
+    max-height: 100vh;
+    transition: all 0.6s ease-in-out;
+}
+.wrapper input{
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width:768px){
+    ._tile_parent{
+        padding-top: 140px;
+     
+    }
+    ._tile{
+        margin: 10px;   
+     
+        padding: 15px;
+       
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      ._tile h3{
+        font-size: 1rem;
+      }
+
+      ._tile_heading h3{
+        font-size: 1.5rem;
+      }
+      ._tile_heading p{
+          font-size: 15px;
+      }
+
+      .faq-accordion{
+          padding-top: 40px;
+      }
+      .wrapper label span{
+          font-size: 16px;
+          font-weight: 600;
+      }
+      .wrapper label .icon i{
+          font-size: 18px;
+      }
+      .wrapper .parent-tab .content p{
+        font-size: 13px;
+       
+    }
+    .parent-tab input:checked~.content{
+        padding:  10px;
+        max-height: 100vh;
+        transition: all 0.6s ease-in-out;
+    }
+}
+@media (max-width:577px){
+    ._tile_parent{
+        padding-top: 120px;
+     
+    }
+    ._tile{
+        margin: 5px;
+        font-size: 15px;
+        padding: 5px;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      ._tile h3{
+        font-size: 13px;
+      }
+      ._tile_heading{
+          width: 70%;
+         
+      }
+      ._tile_heading h3{
+        font-size: 18px;
+      }
+      ._tile_heading p{
+          font-size: 15px;
+      }
+
+      .faq-accordion{
+          padding-top: 40px;
+      }
+      .wrapper label span{
+          font-size: 16px;
+          font-weight: 600;
+      }
+      .wrapper label .icon i{
+          font-size: 18px;
+      }
+      .wrapper .parent-tab .content p{
+        font-size: 13px;
+       
+    }
+    .parent-tab input:checked~.content{
+        padding:  10px;
+        max-height: 100vh;
+        transition: all 0.6s ease-in-out;
+    }
+}

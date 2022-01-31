@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1353*548 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4.0.0/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #f7f7f7 !important;
+        font-family: "Roboto" !important ;
+      }
+
+      .wavecontainer {
+        padding-top: 5%;
+        background: url(./images/wave.png) no-repeat;
+        background-size: cover;
+      }
+      .app-ic {
+        float: none;
+        max-width: 190px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+      .app-icon {
+        max-width: 160px;
+        width: 100%;
+      }
+
+      #QR {
+        max-width: 110px;
+      }
+      .bmargin-buttons {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/manage&prevent.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <title>Lori</title>
+  </head>
+  <body>
+    <nav
+      id="navbar-main"
+      style="background: #f7f7f7 !important"
+      class="navbar navbar-expand-lg fixed-top navbar-light text-center"
+    >
+      <a class="navbar-brand" href="../index.html"
+        ><img src="../images/logo-update.png" style="width: 100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="appstore-icon">
+            <a
+              class="nav-link disabled"
+              href="https://apps.apple.com/us/app/ripsey/id1547471514?mt=8"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="../images/ios1.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item" id="playstore-icon">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.ripsey"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="../images/google-play.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg pressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../PCOS/pcos.html">PCOS</a>
+                <a class="dropdown-item" href="../CHOLESTEROL/cholestrol.html"
+                  >Cholesterol
+                </a>
+                <a class="dropdown-item" href="../BLOOD PRESSURE/bp.html"
+                  >Blood pressure</a
+                >
+                <a class="dropdown-item" href="../DIABETES/diabetes.html"
+                  >Diabetes</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Prevent
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../DNA/dna.html">DNA Testing</a>
+                <a
+                  class="dropdown-item"
+                  href="../INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="../faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="../blog/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="../about us/about.html"
+              >About us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wavecontainer">
+      <div class="container">
+        <div class="row featurette">
+          <div
+            class="col-lg-4 text-center"
+            id="your-buddy-card"
+            style="margin-top: 8%"
+          >
+            <div class="text-wrapper">
+              <h3
+                class="featurette-heading ripsey-blue"
+                style="font-weight: 600"
+              >
+                Your Buddy For Diabetes!
+              </h3>
+              <h4
+                class="lead text-left ripsey-red"
+                style="font-weight: normal; font-size: 1.3rem"
+              >
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="defaultChecked2"
+                    checked
+                  />
+                  <label class="custom-control-label" for="defaultChecked"
+                    >Custom Diet Plan</label
+                  >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="defaultChecked2"
+                    checked
+                  />
+                  <label class="custom-control-label" for="defaultChecked2"
+                    >Health Metric</label
+                  >
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="defaultChecked2"
+                    checked
+                  />
+                  <label class="custom-control-label" for="defaultChecked2"
+                    >Blood Tests</label
+                  >
+                </div>
+              </h4>
+              <h4
+                class="featurette-heading m-4"
+                style="font-weight: 500; font-size: 1.5rem"
+              >
+                Get the App for Free
+              </h4>
+              <!-- buttons Grid -->
+
+              <div
+                class="d-flex align-items-center justify-content-center"
+                id="get-the-app"
+              >
+                <span class="app-ic">
+                  <a
+                    class="disabled"
+                    onclick="window.location='https://apps.apple.com/us/app/ripsey/id1547471514?mt=8'"
+                    ><img
+                      style="cursor: pointer"
+                      class="border-shadow-download-icons app-icon"
+                      src="./images/ios.png"
+                      alt=""
+                  /></a>
+
+                  <a
+                    onclick="window.location='https://play.google.com/store/apps/details?id=com.ripsey'"
+                    ><img
+                      style="cursor: pointer"
+                      class="
+                        bmargin-buttons
+                        border-shadow-download-icons
+                        app-icon
+                      "
+                      src="images/google-play.png"
+                      alt=""
+                  /></a>
+                </span>
+                <span class="app-ic">
+                  <img
+                    id="QR"
+                    class="border-shadow-download-icons"
+                    src="images/qr.png"
+                    alt="qr-image"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <img
+              id="bp_graphic"
+              class="featurette-image img-fluid mx-auto"
+              alt="500x500"
+              src="./images/graphic.png"
+              style="margin-top: 6%"
+              data-holder-rendered="true"
+            />
+          </div>
+        </div>
+      </div>
+      <br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br class="d-none d-lg-block" /><br class="d-none d-lg-block" /><br
+        class="d-none d-lg-block"
+      /><br class="d-none d-lg-block" /><br /><br />
+    </div>
+
+    <section
+      class="container align-items-center justify-content-center"
+      style="
+        box-shadow: 6px 6px 12px rgb(0 0 0 / 8%),
+          -6px -6px 12px rgb(255 255 255);
+      "
+    >
+      <video style="width: 95%" loop="true" autoplay="true" muted="muted">
+        <source src="./images/videographic.mp4" type="video/mp4" />
+        <source src="./images/videographic.ogg" type="video/ogg" />
+
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+            <ul class="social list-unstyled" style="float: right">
+              <li>
+                <a href="https://wa.me/+919152017765"
+                  ><span class="fab fa-whatsapp" style="color: #01e675"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lori.healthglobal/"
+                  ><span style="color: #3b5998" class="fab fa-facebook"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="
+              https://www.linkedin.com/company/lori-health/"
+                  ><span style="color: #0e76a8" class="fab fa-linkedin"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/lori.health/"
+                  ><span style="color: #f14843" class="fab fa-instagram"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Lori_Health"
+                  ><span style="color: #00acee" class="fab fa-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Manage</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../PCOS/pcos.html">PCOS</a></li>
+              <li><a href="../CHOLESTEROL/cholestrol.html">Cholesterol</a></li>
+              <li><a href="../BLOOD PRESSURE/bp.html">Blood Pressure</a></li>
+              <li><a href="../DIABETES/diabetes.html">Diabetes</a></li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Prevent</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../DNA/dna.html">DNA Testing</a></li>
+              <li>
+                <a href="../INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+              </li>
+              <li>
+                <a href="../Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>About</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../about us/about.html">About us</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Legal</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>&copy; 2021 All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap4.0.0/jquery-3.2.1.slim.min.js"></script>
+    <script src="../bootstrap4.0.0/popper.min.js"></script>
+    <script src="../bootstrap4.0.0/bootstrap.min.js"></script>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+        // navbarColor();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          document.getElementById("appstore-icon").style.display = "block";
+
+          document.getElementById("playstore-icon").style.display = "block";
+          // document.getElementById("navbar-main").style.maxHeight = "80px";
+
+          // document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("appstore-icon").style.display = "none";
+          document.getElementById("playstore-icon").style.display = "none";
+          // document.getElementById("navbar-main").style.maxHeight = "unset";
+        }
+      }
+
+      function navbarColor() {
+        if (
+          document.body.scrollTop > 70 ||
+          document.documentElement.scrollTop > 70
+        ) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      }
+    </script>
+    <!-- <script>
+      
+        $(document).ready(function(){
+              if ($(window).width() < 767) {
+                document.getElementById("navbar-main").style.backgroundColor =
+                    "#f7f7f7";
+               } 
+               else{
+                document.getElementById("navbar-main").style.backgroundColor =
+                    "transparent";
+               }
+        });
+        </script> -->
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/20272274.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

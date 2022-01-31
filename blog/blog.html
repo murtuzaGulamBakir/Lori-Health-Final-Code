@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1353*548 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4.0.0/bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #f7f7f7 !important;
+        font-family: "Roboto" !important ;
+      }
+
+      .dropdown-item {
+        cursor: pointer;
+      }
+      .app-ic {
+        float: none;
+        max-width: 190px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+      }
+      .app-icon {
+        max-width: 160px;
+        width: 100%;
+      }
+
+      #QR {
+        max-width: 110px;
+      }
+      .bmargin-buttons {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Lori</title>
+  </head>
+  <body>
+    <nav
+      id="navbar-main"
+      style="background: #f7f7f7 !important"
+      class="navbar navbar-expand-lg fixed-top navbar-light text-center"
+    >
+      <a class="navbar-brand" href="../index.html"
+        ><img src="../images/logo-update.png" style="width: 100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="appstore-icon">
+            <a
+              class="nav-link disabled"
+              href="https://apps.apple.com/us/app/ripsey/id1547471514?mt=8"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="../images/ios1.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item" id="playstore-icon">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.ripsey"
+              ><img
+                class="img-fluid ios-play-icons"
+                src="../images/google-play.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../PCOS/pcos.html">PCOS</a>
+                <a class="dropdown-item" href="../CHOLESTEROL/cholestrol.html"
+                  >Cholesterol
+                </a>
+                <a class="dropdown-item" href="../BLOOD PRESSURE/bp.html"
+                  >Blood pressure</a
+                >
+                <a class="dropdown-item" href="../DIABETES/diabetes.html"
+                  >Diabetes</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="btn-lg unpressed-button-b dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Prevent
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="../DNA/dna.html">DNA Testing</a>
+                <a
+                  class="dropdown-item"
+                  href="../INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="../faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pressed-button" href="../blog/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link unpressed-button" href="../about us/about.html"
+              >About us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="box">
+        <div class="headerimg"></div>
+        <h1 class="searchheading">Know More About Your Health</h1>
+        <form
+          action=""
+          class="d-flex align-items-center justify-content-center"
+        >
+          <input
+            type="text"
+            name=""
+            placeholder=" Type keywords to find answers"
+            class="search-field"
+            onkeyup="searchFun()"
+            id="myinput"
+          />
+          <input
+            type="submit"
+            name=""
+            value="Search"
+            class="search-submit"
+            onclick="searchFun()"
+          />
+        </form>
+      </div>
+
+      <div
+        class="row d-flex justify-content-between filter align-items-center"
+        style="margin: 0px 10% 0"
+      >
+        <div id="errmsg">
+          <h3>TRY SEARCHING WITH A DIFFERENT KEYWORD</h3>
+        </div>
+        <h3 style="color: #222162" id="results" class="results">
+          Results Found
+        </h3>
+        <!-- <div class="dropdown">
+          <a
+            class="
+              btn-lg
+              shadow_out
+              unpressed-button-b
+              dropdown-toggle
+              shadow_out
+            "
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            style="background: #f7f7f7; color: #8f8f8f"
+          >
+            FILTER BY CATEGORY
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" onclick="filterall()">Hide All</a>
+            <a class="dropdown-item" onclick="filterpcos()">PCOS</a>
+          </div>
+        </div> -->
+      </div>
+      <div class="container-fluid faq-tiles" id="faq-tiles">
+        <div class="row d-flex justify-content-center">
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-detailed.html'"
+          >
+            <!-- <h3>General</h3>
+            <div class="card-text">
+              <span>The Basics</span>
+              <span>Sign up & Getting Started</span>
+              <span>Pricing</span>
+            </div>
+
+            <b>View More</b> -->
+
+            <img
+              class="w-100"
+              src="./images/What is PCOS.png"
+              alt="what is pcos"
+            />
+
+            <div class="card-text">
+              <span
+                >What is PCOS ? <br />
+                Polycystic Ovary Syndrome (PCOS, also known as PCOD) is a
+                medical condition that causes hormonal imbalance in women. PCOS
+                or PCOD will make your body secrete more male hormones
+                (androgen) than usual. This excess secretion will enlarge your
+                ovaries</span
+              >
+            </div>
+
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              What is PCOS Polycystic Ovary Syndrome (PCOS, also known as PCOD)
+              is a medical condition that causes hormonal imbalance in women.
+              PCOS or PCOD will make your body secrete more male hormones
+              (androgen) than usual. This excess secretion will enlarge your
+              ovaries, making you develop small cysts (fluid-filled sacs) on the
+              outer edges of your ovaries and, you will experience
+              irregularities in your menstrual cycles and infertility. PCOS
+              affects women during their childbearing years, which is
+              approximately between 12 to 45 years. Studies show that around
+              26.7% of women in this age group have PCOS, so if you fall under
+              this age group, keep reading. If you are above 45 years of age or
+              transitioning into menopause, this would still be relevant, as
+              PCOS doesn't go away when menstruation does. [READ MORE: DOES PCOS
+              GO AWAY AFTER MENOPAUSE?] Even before getting an ultrasound or
+              pelvic exam, you can detect PCOS through its symptoms like
+              irregular periods and excessive body hair. You must identify these
+              symptoms early on and start your treatment towards the reversal of
+              PCOS because, at a later stage, PCOS can contribute to long-term
+              health problems such as type 2 diabetes, heart-related diseases,
+              and uterine cancer. [READ MORE: DOES PCOS GETS WORSE WITH AGE?]
+              What causes PCOS? The precise cause for PCOS remains unknown but
+              Doctors say that there are a few factors that can lead you to
+              develop PCOS. Insulin resistance – Insulin resistance is a
+              condition where your cells stop responding to Insulin. When this
+              happens, your body stops converting food into energy and, your
+              Pancreas will start to produce an excess amount of Insulin. This
+              will result in increase of Androgen levels and will cause
+              complications in your menstrual cycle. Heredity – Research
+              suggests that certain genes might be linked to PCOS and, you can
+              inherit it from your female family members. High level of
+              inflammation – Inflammation is a process by which your White blood
+              cells fights against diseases. A high level of inflammation
+              stimulates the creation of cysts in your ovaries and leads to the
+              development of PCOS [READ MORE: WHAT IS THE MAIN CAUSE OF PCOS?]
+              How do you know if you have PCOS? PCOS manifests itself through
+              syndromes or groups of symptoms in your body. You obviously cannot
+              do an ultrasound or a pelvic exam at home but there are other ways
+              through which you can initially self-diagnose PCOS. The more
+              visible and easily detectable symptoms of PCOS are: ➢ Irregular
+              menstrual cycle ➢ Infertility ➢ Excess growth of facial hair and
+              hair loss ➢ Weight gain [READ MORE: WHAT ARE THE SYMPTOMS OF
+              PCOS?] Do you have an irregular menstrual cycle due to PCOS? The
+              increase in Androgen levels and the formation of cysts at the
+              entrance of your ovaries contribute to the irregularities in your
+              menstrual cycle. Your period might be either too short or too long
+              with an excessive amount of bleeding. In some cases, you might
+              have less than 8 periods per year. [READ MORE: WHAT DOES YOUR
+              PERIOD TELL ABOUT PCOS?] Are PCOS and complications in getting
+              pregnant linked? The cysts formed in your ovaries will obstruct
+              the development and release of eggs. This will result in the
+              production of unhealthy eggs, hindering the seamless release of
+              eggs from your ovaries. These factors disrupt the fertilization of
+              your egg by a sperm and will result in infertility and
+              miscarriage. [READ MORE: 18. PCOS AND PREGNANCY – CAN YOU GET
+              PREGNANT IF YOU HAVE PCOS?] Can PCOS cause excessive facial hair
+              and hair loss? PCOS stimulates your hair follicles and makes you
+              develop a male pattern of hair growth. You might notice denser and
+              darker hair growth in places like, • Upper lip • Neck • Chest •
+              Lower abdomen In addition, you will have higher hair loss in your
+              scalp than usual (more than 100 – 250 strands per day) [READ MORE:
+              PCOS AND FACIAL HAIR: HOW TO MANAGE PCOS FACIAL HAIR GROWTH?] Does
+              PCOS lead to obesity? When you have PCOS, your body converts food
+              into fat and so, you will start to gain weight over time. You
+              might notice more weight gain in your abdomen than in other parts
+              of the body. [READ MORE IN DOES PCOS GIVE YOU A BIG BELLY?] Why
+              should you worry about PCOS? The hormone imbalance caused due to
+              PCOS will affect tissues throughout your body and you have a
+              higher chance of developing the following serious health
+              conditions. Type 2 Diabetes – With PCOS, you will have decreased
+              sensitivity to insulin and you will have a higher risk of getting
+              type 2 diabetes. Metabolic syndrome – PCOS can lead to a group of
+              conditions including high blood pressure, high blood sugar level,
+              low good cholesterol, and high bad cholesterol. All of these
+              conditions together will increase the risk of cardiovascular
+              disease and stroke. Endometrial cancer – During your periods, the
+              lining in your uterus sheds but PCOS messes with your ovulation
+              and the lining starts to build up. This thickened uterine lining
+              will cause Endometrial/Uterine cancer. Non-alcoholic fatty liver
+              disease – The increase of fat due to insulin resistance will lead
+              to the accumulation of fat in your liver, which can cause serious
+              damage to your liver. Can you reverse PCOS? The good news is YES!
+              By modifying certain aspects of your lifestyle, you can balance
+              your hormone levels and reduce the risk of developing serious
+              health issues. The four aspects of your lifestyle that you need to
+              work on are, ● Nutritious diet ● Exercise ● Meditation ● Sleep
+              [READ MORE: CAN I REVERSE PCOS?] Will nutritious diet help with
+              PCOS? A nourishing diet will go a long way in regulating your
+              hormones, Blood sugar levels and assist in weight loss. Planning
+              your everyday meals with a balanced diet is very difficult. This
+              is where Lori comes in handy! Lori is a diet planning app, which
+              gives you personalized nutritious diet plans every day based on
+              your physique and your clinical concerns so, join us today in the
+              reversal of PCOS. [READ MORE: PCOS DIET - TOP 5 THINGS TO AVOID]
+              How can exercise help with PCOS? To reduce the insulin level of
+              your body, you need to lose excess weight and do physical
+              activity. By doing so, you will slowly bring your insulin levels
+              back to normal and eventually reverse PCOS. [READ MORE: PCOS
+              WORKOUT – 5 THINGS TO DO] Can meditation and adequate sleep help
+              with PCOS? Stress and an unhealthy sleep schedule are some of the
+              leading factors to hormonal imbalance in your body. Practicing
+              meditation and having adequate sleep will help reduce stress and
+              ensure the proper functioning of your body and will help rectify
+              PCOS issues within your body. [READ MORE: I AM HAVING TROUBLE
+              SLEEPING. DOES PCOS GIVE YOU SLEEP ISSUES?] Lori helps you to
+              manage and reverse your PCOS by recommending the appropriate
+              nutrition for you based on your lifestyle and health conditions.
+              You can even track your menstrual cycle and your hormone levels on
+              the app. DOWNLOAD THE APP for free for your personalized health
+              solution! References [1] March, Wendy A et al. “The prevalence of
+              polycystic ovary syndrome in a community sample assessed under
+              contrasting diagnostic criteria.” Human reproduction (Oxford,
+              England) vol. 25,2 (2010): 544-51. doi:10.1093/humrep/dep399 [2]
+              Dunaif A. Insulin resistance and the polycystic ovary syndrome:
+              mechanism and implications for pathogenesis. Endocr Rev. 1997
+              Dec;18(6):774-800. doi: 10.1210/edrv.18.6.0318. PMID: 9408743. [3]
+              Ajmal, Nida, et al. “Polycystic Ovary Syndrome (PCOS) and Genetic
+              Predisposition: A Review Article.” European Journal of Obstetrics
+              & Gynecology and Reproductive Biology: X, Elsevier, 8 June 2019,
+              www.sciencedirect.com/science/article/pii/S2590161319300948
+            </span>
+          </div>
+
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-symtoms.html';"
+          >
+            <img
+              class="w-100"
+              src="./images/What are the symptoms of PCOS.png"
+              alt=""
+            />
+
+            <div class="card-text">
+              <span>
+                What are the Symptoms of PCOS? <br />
+                Polycystic ovary syndrome (PCOS) is a condition that affects
+                hormone levels in women.Here’s a list of symptoms of PCOS:
+                Irregular menstrual cycle Infertility, Excess growth of facial
+                hair and hair loss, Weight gain, Acne, Skin darkening,
+                Anxiety.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              What are the Symptoms of PCOS Polycystic ovary syndrome (PCOS) is
+              a condition that affects hormone levels in women. If you are a
+              woman between 12 years to 45 years, you should know how to
+              identify this issue and know when to consult with your physician.
+              So, here’s a list of symptoms of PCOS: • Irregular menstrual cycle
+              • Infertility • Excess growth of facial hair and hair loss •
+              Weight gain • Acne • Skin darkening • Anxiety How is your
+              menstrual cycle affected by PCOS? With PCOS, your menstrual cycle
+              goes for a toss. Your periods could be irregular, either too short
+              or too long! In some cases, you could have an excessive amount of
+              bleeding too. When you have PCOS, you tend to have higher androgen
+              levels (male hormones) and, an excessive amount of insulin in your
+              body. This imbalance creates small cysts in the entrance of your
+              ovaries and causes irregularities in your menstrual cycle. [READ
+              MORE: PCOS AND TRACKING YOUR PERIODS: DOES THAT HELP?] How do you
+              know when you have irregular periods due to PCOS? • In the case of
+              adolescents, you will experience a delay in getting your first
+              period • For adults, you will have less than 8 periods in a year •
+              The duration between your periods will be less than 21days • The
+              period bleeding could end in less than 2 days. • Extended period
+              bleeding for more than 5 days. If you identify with any of these
+              issues, there is a high chance that you might have PCOS, so we
+              suggest you consult with your physician. [READ MORE: WHAT DOES
+              YOUR PERIOD TELL ABOUT PCOS] Does PCOS make it harder to get
+              pregnant? PCOS is known to cause fertility issues in women.
+              According to experts, almost 35% of cases of infertility are due
+              to PCOS. Causes of infertility (Shady Groove Fertility, 2008) If
+              you have PCOS, the hormonal imbalance interferes with the
+              development and release of eggs from your ovaries. It also creates
+              multiple fluid-filled sacs (cysts) in your ovaries, hindering your
+              ovulation process and affects the quality of your egg. If your
+              ovaries do not release a healthy egg, you will experience
+              infertility and miscarriage. If this sounds like what you have
+              been going through, you might want to consult a doctor. In the
+              meantime, keep in mind that PCOS is reversible and, help and
+              guidance are available to keep your PCOS symptoms in control!
+              [READ MORE: IS IT HARD TO BE PREGNANT IF YOU HAVE PCOS?] Does PCOS
+              cause excessive facial hair and hair loss? PCOS causes an excess
+              of Androgen, the male hormone which, stimulates your hair
+              follicles and causes you to develop a male pattern of hair growth.
+              You might notice hair growing in places like, • Upper lip • Chin •
+              Neck • Chest • Lower abdomen This excess hair growth will be
+              thicker and darker than your usual body hairs. If you notice this
+              unusual hair growth, see them as a sign to consult a doctor. Also,
+              you may have seen excessive amounts of hair loss in your scalp
+              (more than 100 -150 strands.) [READ MORE: PCOS AND FACIAL HAIR:
+              HOW TO MANAGE PCOS FACIAL HAIR GROWTH?] Does PCOS cause weight
+              gain in the abdominal region? When you have PCOS, insulin
+              resistance develops, wherein your body won’t use the insulin
+              present in your body. This causes a fluctuation in your Blood
+              sugar level and, you become obese. Insulin resistance cycle
+              Furthermore, your body secretes extra insulin, which increases the
+              male hormones (Androgen) production in your ovaries, and might
+              gain more fat in your abdominal area (men usually carry weight in
+              that area.) Researchers have found that around 85% of women with
+              PCOS suffer from insulin resistance. The more weight you gain, the
+              more your other symptoms will start to develop at a quicker pace.
+              [READ MORE: DOES PCOS GIVE YOU A BIG BELLY?] Do you have PCOS
+              Acne? PCOS attacks your Pituitary gland, which is responsible for
+              the regulation of hormones. This hormonal imbalance causes acne in
+              your face, chest, and upper back. Acne is one of the earliest
+              symptoms of PCOS and, if you do not exercise caution, it could
+              lead to the progress of PCOS and increase of other PCOS symptoms
+              in your body. [READ MORE: PCOS AND ACNE: HOW DO I MANAGE MY PCOS
+              ACNE?] Is your skin unusually dark in certain areas because of
+              PCOS? When you have PCOS, you are prone to develop discoloration
+              (scientifically called Acanthosis nigricans) in certain parts of
+              your skin. Insulin resistance causes your skin to have patches of
+              black and purplish velvet textures in your underarm region and
+              under your breasts too. The same colour and texture will also form
+              a ring around your neck. No skin treatment can get rid of this
+              discoloration, and only by addressing the underlying insulin
+              resistance issue can this be reversed. Does PCOS make you more
+              anxious? Anxiety is one of the psychological symptoms of PCOS.
+              Hormonal changes coupled with sudden weight gain and excessive
+              hair growth in the “unfeminine” places in your body can cause
+              emotional and mental stress lowering your self-esteem and can have
+              a significant impact on your overall mood. Studies show that women
+              with PCOS are 3 times more likely to be diagnosed with anxiety
+              than women without PCOS. [READ MORE: PCOS AND MENTAL HEALTH: HOW
+              TO HANDLE STRESS AND ANXIETY?] What are the suggestions to reverse
+              your PCOS symptoms? If you experience any of these symptoms, don’t
+              be distressed or disheartened. The good news is that you can
+              reverse PCOS by having a healthy lifestyle with nutritious food
+              and physical activity. At Lori, we support you on your journey
+              towards reversing PCOS. Based on your health and body, the Lori
+              app provides you with personalized daily nutrition plans. The goal
+              here is to help your body use insulin effectively and regulate
+              your blood sugar levels. The menstrual tracker helps track your
+              menstrual cycle and provides meal suggestions based on this.
+              Whichever stage of PCOS you are in (irregular periods, looking to
+              get pregnant, transitioning through menopause), we are here to
+              help! Let us begin the reversal of your PCOS today! [READ MORE:
+              CAN YOU REVERSE PCOS?] References: [1] Dennett, Carrie C., and
+              Judy Simon. “The Role of Polycystic Ovary Syndrome in Reproductive
+              and Metabolic Health: Overview and Approaches for Treatment.”
+              Diabetes Spectrum, American Diabetes Association, 1 May 2015,
+              spectrum.diabetesjournals.org/content/28/2/116. [2] El Hayek,
+              Samer, et al. “Poly Cystic Ovarian Syndrome: An Updated Overview.”
+              Frontiers in Physiology, Frontiers Media S.A., 5 Apr. 2016.
+              www.ncbi.nlm.nih.gov/pmc/articles/PMC4820451/. [3] Zhang, B.,
+              Zhou, W., Shi, Y. et al. Lifestyle and environmental contributions
+              to ovulatory dysfunction in women of polycystic ovary syndrome.
+              BMC Endocr Disord 20, 19 (2020).
+              https://doi.org/10.1186/s12902-020-0497-6
+            </span>
+          </div>
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-cause.html';"
+          >
+            <img
+              class="w-100"
+              src="./images/What is the main cause of PCOS.png"
+              alt=""
+            />
+
+            <div class="card-text">
+              <span>
+                What is the main cause of PCOS? <br />
+                Do you know that Researchers, doctors, and health care providers
+                worldwide don't know the precise cause of PCOS? Most believe
+                that several factors such as insulin resistance, hormonal
+                changes, genetics, and environmental factors cause PCOS.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              What is the main cause of PCOS Do you know that Researchers,
+              doctors, and health care providers worldwide don't know the
+              precise cause of PCOS? Most believe that several factors such as
+              insulin resistance, hormonal changes, genetics, inflammation,
+              lifestyle changes, and environmental factors cause PCOS. How does
+              Insulin Resistance Cause PCOS? Insulin resistance is caused
+              majorly by lifestyle factors. As more blood sugar enters the
+              bloodstream, the pancreas secretes more insulin to push the blood
+              sugar into the cells. Over time, your cells stop responding to all
+              that insulin. This condition is insulin resistance. A higher level
+              of insulin increases the production of androgens (a group of
+              hormones that play a role in male traits), causing difficulty with
+              ovulation. Many women with PCOS have insulin resistance. Insulin
+              resistance leads to weight gain, irregular periods, and even type
+              2 diabetes if left unchecked. How do Hormonal Changes Cause PCOS?
+              Due to hormonal imbalance, there will be an increase in male
+              hormone production (hyperandrogenism). Androgens are called the
+              “male hormones”, which control the development of male traits in
+              your body. The ovaries produce high levels of androgens (such as
+              testosterone). Higher than the normal androgen levels in your body
+              can affect your ovaries and prevent ovulation and thus, remain a
+              leading cause of infertility. The hormonal imbalance also
+              contributes to symptoms, such as irregular periods, male pattern
+              baldness, excess hair growth, and acne. Apart from Androgens,
+              imbalance in hormones such as estrogen, cortisol, thyroid hormone
+              can also cause PCOS. Is PCOS Genetic? Scientists believe that
+              there is a link between certain genes and PCOS and that the link
+              is likely to be complex and involves multiple genes. A wide
+              variety of genes and mechanisms seem to cause PCOS and, so it has
+              a wide range of symptoms and develops at different ages for women.
+              Genes trigger a hormone cascade in your body which affects hormone
+              levels and insulin resistance. PCOS seems to have a connection
+              with family history and genetics. Hence, it runs in families due
+              to mutation in one or more genes. It increases the risk for the
+              family to develop the same metabolic abnormality. How does
+              Inflammation Cause PCOS? Inflammation occurs when your body’s
+              natural immune system reacts to a foreign substance in an attempt
+              to protect your body from an invader. Unfortunately, sometimes
+              this response is triggered to react to your cells. Without going
+              all science-y, there is a high correlation between PCOS and
+              inflammation markers such as oxidative stress, inflammatory
+              cytokines, white blood cells (lymphocytes and monocytes).
+              Inflammation makes it harder to lose weight and is associated with
+              diabetes, insulin resistance and heart disease (common in those
+              with PCOS). How does Lifestyle Cause PCOS? Leading an unhealthy
+              lifestyle increases the risk of PCOS. Poor eating habits, lack of
+              physical activity, gaining too much weight, sleeping disorders,
+              and high-stress levels are the substantial causes of PCOS. It also
+              leads to physically and emotionally distressing symptoms. A diet
+              high in carbohydrates can cause insulin resistance in your body.
+              It can cause low-grade inflammation, which stimulates the
+              androgens' production and cysts' creation in your ovaries. It can
+              also lead to cardiovascular problems. Check out Lori app and get
+              your personalized nutrition plan today. To manage a healthy
+              lifestyle, it recommends a healthy eating regime without any
+              artificial supplementation. Lack of physical activity is a
+              potential contributing factor to insulin resistance. It leads to a
+              higher concentration of estrogen in the body which causes weight
+              gain. Higher than a healthy weight worsens insulin resistance and,
+              it increases the production of male hormones responsible for PCOS
+              symptoms. Depression and other mental health disorders can worsen
+              your PCOS symptoms. It causes reproductive dysfunctions in your
+              body (e.g., infertility). Lack of quality sleep is associated with
+              an increased risk of obesity, fatigue, increased hunger, and
+              insulin resistance. The causes for PCOS/PCOD may be many but there
+              is a one-step solution for all this. This is where Lori app helps
+              you. It creates your personalized health plan based on your body’s
+              requirement. It can assess the root cause of your disorder
+              (pcos/pcod) by health evaluation and helps you manage PCOS/PCOD.
+              [READ MORE: CAN YOU REVERSE PCOS?] REFERENCE: "Causes & Symptoms."
+              Jean Hailes, 26 Sept. 2019,
+              www.jeanhailes.org.au/health-a-z/pcos/symptoms-causes. "Polycystic
+              Ovary Syndrome (PCOS) - Diagnosis and Treatment - Mayo Clinic."
+              Mayo Clinic - Mayo Clinic, 29 Aug. 2017,
+              www.mayoclinic.org/diseases-conditions/pcos/diagnosis-treatment/drc-20353443.
+              "Polycystic Ovary Syndrome (PCOS) - Symptoms and Causes." Mayo
+              Clinic, 29 Aug. 2017,
+              www.mayoclinic.org/diseases-conditions/pcos/symptoms-causes/syc-20353439.
+              "Polycystic Ovary Syndrome." Womenshealth.gov, 1 Apr. 2019,
+              www.womenshealth.gov/a-z-topics/polycystic-ovary-syndrome. "What
+              Causes PCOS?" Https://www.nichd.nih.gov/,
+              www.nichd.nih.gov/health/topics/pcos/conditioninfo/causes.
+            </span>
+          </div>
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./reverse-pcos-detailed.html';"
+          >
+            <img class="w-100" src="./images/Can you Reverse PCOS.png" alt="" />
+
+            <div class="card-text">
+              <span>
+                Can you Reverse PCOS ? <br />
+                Yes, of course. PCOS and PCOD manifest as acne, menstrual
+                irregularities, obesity, male-pattern baldness, weight gain, and
+                fatigue. Reversing the condition can be attempted by balancing
+                the hormone levels and certainly require lifestyle
+                changes.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              Can you Reverse PCOS Yes, of course. To attempt the reversal of
+              PCOS and PCOD, you need to know more about them. PCOS and PCOD
+              manifest as acne, menstrual irregularities, obesity, male-pattern
+              baldness, facial hair growth, mood swings, weight gain, and
+              fatigue. Reversing the condition can be attempted by balancing the
+              hormone levels and certainly require lifestyle changes. Your
+              efforts to reverse PCOS and PCOD help reduce the risk of
+              developing health complications in the future. The mantra to
+              reverse PCOS is a mix of: Eating wisely, being physically active,
+              sleeping well, and managing your stress to reverse the hormone
+              imbalances and the symptoms. How to Eat Well if you have PCOS or
+              PCOD? The first part of the Reverse PCOS/PCOD Mantra is your
+              nutrition. While there are dime-a-dozen solutions, you have to
+              find out what works for you. Get a custom solution based on what
+              your body requires. (This is where Lori helps. Download our app
+              for free and get your custom nutrition plan today!) Food is your
+              primary source of nutrients and, hence a nourishing diet helps
+              regulate your hormones. Consumption of nutritious, natural and
+              unprocessed food such as fruits, vegetables, grains and legumes
+              helps regulate your blood sugar levels. Keep a track of your
+              weight loss, decreased insulin levels, periods to know if your
+              regime is working. Track these and many more health metrics on the
+              Lori app. Managing a consistent well-balanced diet might be a task
+              for most of you. Here is where the Lori app helps you. It helps
+              manage PCOS and other clinical concerns by recommendations about
+              what you can eat to manage a healthy lifestyle without any
+              artificial supplementation. Your health plan is yours, customized
+              to you, so you can relax about 'what should I eat today?'. Open
+              the app and check out your recommendations and, if you don’t like
+              any, you can switch to something you like from the variety of
+              options. The app also helps you track your health markers such as
+              weight, hormone levels, blood sugar, insulin and many more. [READ
+              MORE: PCOS DIET - TOP 5 THINGS TO AVOID] Does Exercise Help to
+              Reverse PCOS/PCOD? Lack of physical activity and excess body
+              weight are potential contributing factors to insulin resistance,
+              according to the National Institute of Diabetes and Digestive and
+              Kidney Diseases. Be more active and incorporate any physical
+              activity for a minimum of 30 minutes per day. This helps you
+              manage the common symptoms of PCOS, such as weight gain and
+              fatigue. Weight reduction leads to a decrease in glucose
+              intolerance, which, in turn, leads to improvement in reproductive
+              and metabolic derangements in PCOS. Exercise training improves the
+              regularity of menstrual cycles and ovulation. Focus on your
+              physical activity, frequency, duration, and intensity and make
+              sure not to overdo it. Include exercise in your daily routine, and
+              you'll see that your hormone balance is restored naturally. [READ
+              MORE: PCOS WORKOUT – 5 THINGS TO DO] Can Meditation Help with
+              PCOS/PCOD? Women with PCOS are more likely to possess reduced
+              quality of life and anxiety and/or depression symptoms. If you are
+              constantly under pressure, it disrupts the hormonal/endocrine
+              system. Avoiding stress is very important to ensure your hormonal
+              balance. Elevated levels of stress for long periods can be harmful
+              to your hormones and overall health. Hence you should practice
+              meditation, yoga or mindfulness to ensure that you stay more in
+              the present. [READ MORE: PCOS AND MENTAL HEALTH: HOW TO HANDLE
+              STRESS AND ANXIETY?] Is PCOS/PCOD disturbing your Sleep? Your body
+              requires at least 7-9 hrs of sleep to function normally. Make sure
+              you get quality sleep every day to ensure hormonal balance. Sleep
+              deprivation leads to increased hunger and carbs craving. Leptin or
+              satiety hormone is suppressed due to lack of sleep. This is why
+              you feel hunger pangs on the day that you have not slept well.
+              Regulating sleep helps you achieve good results in the reversal of
+              PCOS. Fix your sleep issues by focusing on sleep hygiene. If you
+              are experiencing sleep disturbances, it will most likely be taken
+              care of by the diet and lifestyle adjustments. Fortunately, you'll
+              reverse PCOS with the proper combination of diet, exercise, sleep,
+              and meditation. Put conscious efforts to correct your condition.
+              Consult with your physician if you have any specific needs. [READ
+              MORE: I AM HAVING TROUBLE SLEEPING. DOES PCOS GIVE YOU SLEEP
+              ISSUES?] REFERENCE: Eenfeldt, Andreas. "Can Low Carb and Keto Help
+              Reverse PCOS? — Diet Doctor." Diet Doctor, 28 Jan. 2021,
+              www.dietdoctor.com/low-carb/benefits/pcos. Galan, Nicole. "How
+              Exercise for Women With PCOS Leads to Better Health." Verywell
+              Health, 22 Oct. 2020,
+              www.verywellhealth.com/exercise-benefits-for-women-with-pcos-2616351.
+              "Natural Treatments for PCOS: Evidence-based Methods." Medical and
+              Health Information, 4 Oct. 2019,
+              www.medicalnewstoday.com/articles/326560. "How PCOS Can Sometimes
+              Lead to Sleep Difficulties." Verywell Health, Nov. 2019,
+              www.verywellhealth.com/pcos-and-sleep-disturbances-2616639.
+              Khademi, Afsaneh. "The Effect of Exercise in PCOS Women Who
+              Exercise Regularly." PubMed Central (PMC),
+              www.ncbi.nlm.nih.gov/pmc/articles/PMC3289164/.
+            </span>
+          </div>
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-or-pcod.html';"
+          >
+            <img class="w-100" src="./images/PCOS or PCOD.png" alt="" />
+
+            <div class="card-text">
+              <span>
+                Are PCOS and PCOD the Same? <br />
+                We use Polycystic Ovary Syndrome (PCOS) and Polycystic Ovary
+                Disease (PCOD) interchangeably, but they actually are not the
+                same. Both are gynaecological problems associated with your
+                ovaries and have similar causes, but they are different.
+              </span>
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              Are PCOS and PCOD the Same We use Polycystic Ovary Syndrome (PCOS)
+              and Polycystic Ovary Disease (PCOD) interchangeably, but they
+              actually are not the same. Both are gynaecological problems
+              associated with your ovaries and have similar causes, but they are
+              different. But there are many differences between the two that you
+              simply must know! Before we go into the sciencey explanation, here
+              is a little example. The Endocrine system is made up of glands
+              that make hormones. So if hormones are cars, Endocrine System is
+              the factory that they are made in. PCOD is a hormonal disorder
+              (From our example, it is the issue with cars. e.g. brakes, engine
+              etc.). PCOD is considered temporary as there are higher
+              possibilities to reverse it (You can go to a repair shop and get
+              the car fixed). PCOD is more common as compared to PCOS. The
+              ovaries contain many immature or partially mature eggs, which
+              eventually become a cyst. These cysts cause more cysts, and so the
+              cycle goes. It does not cause infertility in all women, and with
+              medical intervention, the women can conceive successfully. Women
+              who have PCOD may have similar symptoms as PCOS, but they ovulate
+              periodically. PCOD can be fixed with lifestyle changes. PCOS is an
+              endocrinological disorder (From our example, it is an issue with
+              the factory. e.g. assembly line issues). PCOS is severe (needs a
+              lot more work to fix this) and has serious complications. In PCOS,
+              the ovaries produce higher levels of androgen, which interferes
+              with egg development and release. A number of the eggs become
+              cysts. These cysts build up within the ovaries and may even get
+              enlarged during ovulation. For women with PCOS, conception can
+              become a bit of a challenge. They even have higher rates of
+              miscarriages. PCOS needs more medical intervention and clinical
+              supervision. [READ MORE: WHAT IS PCOS?] What are the Causes of
+              PCOS and PCOD? Though the exact cause is unknown, a lot of factors
+              contribute to both these conditions. PCOD • Poor eating habits •
+              Lack of physical activity • Stress • Gaining too much weight •
+              Excess production of insulin PCOS • High-Stress Level • Hormonal
+              imbalance • Metabolic disorder • Heredity • Excess production of
+              androgen and insulin • Presence of low-grade inflammation [READ
+              MORE: WHAT IS THE MAIN CAUSE OF PCOS?] How to Diagnose PCOS and
+              PCOD? There is no specific test to diagnose PCOS or PCOD and,
+              there aren't any universal diagnostic criteria. this is often
+              because the signs and symptoms for both are quite common. A doctor
+              would recommend several tests to diagnose a PCOS/PCOD condition.
+              These tests include physical examination, blood tests, ultrasound,
+              and pelvic scans. Pelvic/Transvaginal/Abdomen ultrasound: This
+              ultrasound is the testing process to create an image of the
+              ovaries to detect the cysts. In PCOS, the ovaries could also be
+              larger than the usual size and characteristically have 12 or more
+              follicles per ovary. In PCOD, the ovaries might not appear large
+              but have follicles (5 to 6 per ovary) that can be relatively
+              smaller and immature. Often the cysts are lined alongside the
+              surface of the ovaries. Physical Examination: Your doctor may
+              conduct a physical examination where he/she may measure your
+              weight, calculate your BMI, observe abnormal hair growth, hair
+              loss, increase in acne, etc. Pelvic Examination: The doctor may
+              conduct a physical examination, where he/she may feel any abnormal
+              growth within the pelvic area. It is to detect abnormalities
+              within the ovaries, clitoris, vagina, fallopian tubes, rectum,
+              cervix etc. Blood Tests: TSH, T3, and T4: The most common test
+              assigned to the physical symptoms could be a thyroid test. The
+              TSH, T3, and T4 blood tests calculate the extent of thyroid
+              hormones in your bloodstream. Hormone Tests (FSH, LH,
+              Testosterone, Oestrogen, Androgen): Follicle Stimulating Hormone
+              (FSH) regulates your ability to get pregnant, while LH (LH)
+              promotes your ovulation. If you've got PCOS, FSH would be less
+              than the normal level while LH would be higher. [READ MORE: I
+              THINK I MIGHT HAVE PCOS. WHEN SHOULD I SEE A DOCTOR?] What are the
+              symptoms of PCOS and PCOD? You can detect PCOS/PCOD before getting
+              any kind of diagnosis through their symptoms. PCOS  Acne  Weight
+              gain and trouble losing weight  Extra hair on the face and body
+              due to excess androgen in your body  Thinning hair on the scalp
+              or hair loss on the scalp; male-pattern baldness  Irregular
+              periods  Fertility problem  Too much hair on the body where men
+              usually have hair. this is often called "hirsutism."  Skin tags 
+              Darkening of the skin PCOD ● Irregular periods (amenorrhea) ●
+              Unusual body and facial hair growth (hirsutism) ● Stubborn acne ●
+              Uncontrolled weight gain around the waist area ● Pigmentation or
+              darkening of the skin (Acanthosis nigricans) ● Infertility ●
+              Male-pattern baldness ● Headaches [READ MORE: WHAT ARE THE
+              SYMPTOMS OF PCOS?] Diagnosing the symptoms early and starting your
+              treatment on time can prevent you from these long-term health
+              problems. Go and visit your doctor if you see any of the above
+              mentioned symptoms. What are the Other Possible Risks with PCOS
+              and PCOD? PCOS ● Diabetes ● Heart diseases ● Endometrial Cancer ●
+              Obesity-related conditions ● High blood pressure ● Depression ●
+              Obstructive sleep apnea ● Liver disease ● Abnormal uterine
+              bleeding ● Breast cancer ● Metabolic syndrome ● Miscarriage or
+              premature birth ● Non-alcoholic steatohepatitis PCOD Uncontrolled
+              PCOD can cause numerous problems like ● Perinatal complications
+              like gestational diabetes and pre-eclampsia ● Long term risk of
+              endometrial cancers ● Increased cholesterol levels ● High blood
+              pressure [READ MORE: WHY ARE MY PCOS SYMPTOMS GETTING WORSE?]
+              There's no cure for either PCOD or PCOS, but both diseases are
+              often managed with specific medication and lifestyle changes.
+              Check out Lori app, it provides tailored health plans to manage
+              PCOS/PCOD and certain medical conditions that are mentioned under
+              the possible risks of PCOS/PCOD (such as diabetes, cholesterol,
+              blood pressure). It helps you track your health metrics. Download
+              it right away and get access to your personal health management.
+              [READ MORE: CAN YOU REVERSE PCOS?] REFERENCE: "Polycystic Ovaries
+              or PCOS – What’s the Difference?" Dr Alex Polyakov, 7 Oct. 2020,
+              www.dralexpolyakov.com.au/blog/polycystic-ovaries-or-pcos-whats-the-difference/.
+              Watson, Stephanie. "Polycystic Ovary Syndrome (PCOS): Symptoms,
+              Causes, and Treatment." Healthline,
+              www.healthline.com/health/polycystic-ovary-disease. "Polycystic
+              Ovary Syndrome (PCOS) - Diagnosis and Treatment - Mayo Clinic."
+              Mayo Clinic - Mayo Clinic, 29 Aug. 2017,
+              www.mayoclinic.org/diseases-conditions/pcos/diagnosis-treatment/drc-20353443.
+            </span>
+          </div>
+
+          <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./lose-weight-reverse-pcos.html';"
+          >
+            <img
+              class="w-100"
+              src="./images/lose weight reverse pcos.png"
+              alt=""
+            />
+
+            <div class="card-text">
+              <span>
+                Do I have to lose weight to reverse PCOS/PCOD? <br />
+                The answer is YES! Weight loss can significantly help you in
+                reversing PCOS. PCOS is a hormone imbalance syndrome, which
+                increases the Male hormone and insulin levels in your body.It
+                can lead to long-term health issues such as cancer.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none"
+              >lose weight to reverse pcos Do I have to lose weight to reverse
+              PCOS/PCOD? <br />
+              The answer is YES! Weight loss can significantly help you in
+              reversing PCOS. PCOS is a hormone imbalance syndrome, which
+              increases the Male hormone and insulin levels in your body.It can
+              lead to long-term health issues such as cancer.
+            </span>
+          </div>
+          <!-- <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-pregn-complic.html';"
+          >
+            <img class="w-100" src="./blog/images/" alt="" />
+
+            <div class="card-text">
+              <span>
+                WHAT ARE THE PREGNANCY COMPLICATIONS WITH PCOS? <br />
+                If you are with PCOS/PCOD you are at higher risk for certain
+                problems or complications during pregnancy. Complications of
+                pregnancy commonly associated with PCOS can even affect the
+                infant. PCOS can increase your risk of some complications during
+                pregnancy, such as: Miscarriage, Gestational diabetes,
+                Preeclampsia, High blood pressure induced by the
+                pregnancy.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              PCOS DURING PREGNANCY-WHAT ARE THE PREGNANCY COMPLICATIONS WITH
+              PCOS? If you are with PCOS/PCOD you are at higher risk for certain
+              problems or complications during pregnancy. Complications of
+              pregnancy commonly associated with PCOS can even affect the
+              infant. PCOS can increase your risk of some complications during
+              pregnancy, such as: • Miscarriage • Gestational diabetes •
+              Preeclampsia • High blood pressure induced by the pregnancy
+              Miscarriage or an early loss of pregnancy If you have PCOS, you
+              are more likely to miscarry in the early months of pregnancy,
+              though the cause for this relationship is unclear. Researchers
+              believe that a few factors may be to blame. If you tend to have
+              longer menstrual cycles, meaning that ovulation occurs later on.
+              This exposes the developing egg to lots of hormones, possibly
+              damaging it. There is also a known relationship between
+              uncontrolled blood sugar and miscarriage. Given that if you tend
+              to have insulin resistance and elevated insulin levels, that may
+              contribute to poor egg quality and miscarriage. Problems with
+              implantation such as high androgen level and endometrium
+              dysfunction, may also play a role in the increased risk of early
+              pregnancy loss. Gestational diabetes This is a type of diabetes
+              that only pregnant women get. It is treatable and does not cause
+              significant problems. In most cases, the condition goes away after
+              pregnancy. If you have gestational diabetes your baby is at high
+              risk for high birth weight, preterm birth, low blood sugar,
+              jaundice, and have trouble breathing. Preeclampsia It is a sudden
+              increase in blood pressure after the 20th week of pregnancy that
+              can affect your kidneys, liver, and brain. If left untreated,
+              preeclampsia can turn into eclampsia. Eclampsia can cause organ
+              damage, seizures, and even death. Pregnancy-induced high blood
+              pressure This condition is due to an increase in blood pressure
+              that may occur in the second half of pregnancy. If not treated, it
+              can lead to preeclampsia. This type of high blood pressure can
+              also affect the delivery of the baby. [ READ MORE: CAN PCOS BECOME
+              WORSE] WHAT CAN BE DONE TO OVERCOME THE COMPLICATIONS? Most of us
+              are aware that there is difficulty becoming pregnant. In that
+              case, seek out the assistance of a reproductive specialist. Work
+              with your health care provider to promote a healthy pregnancy and
+              delivery. Your doctor can help you develop a plan for getting
+              pregnant. Gestational diabetes can be treated with a combination
+              of lifestyle changes or medication if necessary. It's important to
+              monitor your blood sugar as directed by your physician. The
+              primary treatment for the condition is to deliver the baby, even
+              preterm if necessary. It is important to watch out for signs and
+              symptoms of preeclampsia and promptly report them to your doctor.
+              If you are pregnant or planning to become pregnant and worried
+              about the complications of PCOS, check out Lori App. Based on
+              your health and body condition it provides you with a nutrition
+              plan. It helps your body use insulin effectively and regulate your
+              blood sugar levels. You can talk to our nutritionist and they can
+              help you. Download the app today for free! [READ MORE: PCOS DURING
+              PREGNANCY-WHAT CAN YOU DO TO HAVE A HEALTHY PREGNANCY?] REFERENCE:
+              Brusie, Chaunie. "Polycystic Ovarian Syndrome (PCOS) and
+              Pregnancy: Symptoms." Healthline, 1 Nov. 2016,
+              www.healthline.com/health/pregnancy/pcos. Galan RN, Nicole. "How
+              to Prevent Potential Pregnancy Complications Associated With
+              PCOS." Verywell Health, 22 Oct. 2020,
+              www.verywellhealth.com/potential-pregnancy-complications-with-pcos-2616640.
+              Homburg, Roy. "Pregnancy Complications in PCOS." PubMed, 20 June
+              2006
+            </span>
+          </div> -->
+          <!-- <div
+            class="tile col-lg-3 col-md-3 col-sm-5 pcos"
+            onclick="window.location.href='./pcos-track-periods.html';"
+          >
+            <img class="w-100" src="./blog/images/" alt="" />
+
+            <div class="card-text">
+              <span>
+                PCOS and tracking your periods: Does that help?<br />
+                YES, It does! Tracking your periods can help you a lot and be
+                that one friend that never lets you down! PCOS/PCOD is a
+                hormonal imbalance disorder that predominantly attacks your
+                ovaries and creates complications in your menstruation and
+                ovulation process. Therefore, tracking your periods can help you
+                detect PCOS and also help in keeping tabs on your PCOS
+                symptoms.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between readmore-time-bottom">
+              <b>Read More..</b>
+              <span>3 min</span>
+            </div>
+
+            <span class="d-none">
+              PCOS and tracking your periods: Does that help? YES, It does!
+              Tracking your periods can help you a lot and be that one friend
+              that never lets you down! PCOS/PCOD is a hormonal imbalance
+              disorder that predominantly attacks your ovaries and creates
+              complications in your menstruation and ovulation process.
+              Therefore, tracking your periods can help you detect PCOS and also
+              help in keeping tabs on your PCOS symptoms. [READ MORE: WHAT ARE
+              THE SYMPTOMS OF PCOS?] Can you detect PCOS by tracking periods?
+              When you have PCOS/PCOD, your body will have higher male hormone
+              levels in your ovaries and it will create small cysts in the
+              entrance of your ovaries to block the release of your eggs. This
+              will cause a lot of irregularities in your menstrual cycle.
+              Therefore, by tracking your periods you can detect PCOS symptoms
+              early on and find ways to reverse your PCOS. It is vital for you
+              to detect PCOS at an earlier stage because, at a later stage, it
+              can lead to serious health conditions such as Endometrial/Uterine
+              cancer and Cardiovascular diseases. [READ MORE: CAN PCOS BECOME
+              WORSE?] What does PCOS period tracking mean? PCOS can be initially
+              detected through its major symptom, the irregularity in the
+              menstrual cycle. This irregularity varies from women to women so
+              merely marking your periods on a calendar will do you no good. You
+              need to observe your menstrual cycle for over a year and calculate
+              the no of days between each menstruation in order to figure out if
+              you really have irregularities in your periods because of PCOS.
+              The average duration between each menstruation is 28 days but
+              anything between 21 and 35 days is also considered to be in the
+              normal range so along with this, tracking your periods for a
+              longer time is also necessary. Some of the commonly experienced
+              irregularities faced by women with PCOS are: • Delay in getting
+              the first periods in Adolescents. • Having less than 8 periods in
+              a year • Having no periods for 2-3 consecutive months • Excessive
+              bleeding ( more than 80 ml blood) along with painful cramps in the
+              pelvic region. • Periods lasting for less than 2 days or lasting
+              more than 5 days. [READ MORE: WHAT DOES YOUR PERIOD TELL YOU ABOUT
+              PCOS?] How does tracking periods help after diagnosing PCOS?
+              Women, who are diagnosed with PCOS, commonly worry about their
+              fertility since PCOS affects the quality of the eggs produced in
+              ovaries, which leads to infertility and multiple miscarriages.
+              Once you are diagnosed with PCOS and start your reversal of PCOS
+              process, your periods will start to get back on track But you
+              still need to continue tracking your periods to get familiar with
+              your body’s fertility period. Usually, the time frame between your
+              ovulation (release of egg from ovary) and your period starting is
+              6 days so the five days in between is best to try conceiving.
+              Since your PCOS will still continue to have some effect on your
+              periods, tracking your periods regularly will help you figure out
+              the pattern in your periods and determine that 5-day window that’s
+              best to get pregnant. [READ MORE: WHAT ARE THE PREGNANCY
+              COMPLICATIONS WITH PCOS?] Even if you are not trying to get
+              pregnant, tracking your periods can be of great help. You can use
+              your period info to determine if your current treatment towards
+              the reversal of PCOS is effective and help you track the
+              improvement of your PCOS symptoms. Having definite evidence of
+              your periods getting regular can help raise your spirits and
+              eventually help win your battle against PCOS. What app can I use
+              to track my periods? If you have read till now, you would have
+              realized that tracking your periods is kinda difficult cause it
+              involves calculating and assessing. A little digital help can get
+              you set for a lifetime of period tracking without breaking your
+              head over math! So, download Lori app now and get benefited from
+              its period tracking feature. This user-friendly app will do the
+              calculation for you. It will provide you info on what menstrual
+              phase you are in along with an explanation of what that phase
+              means based on scientific research on female menstruation. Lori
+              doesn’t stop at period tracking, it creates a personalised daily
+              meal plan to help you reverse your PCOS. The best time for
+              beginnings is now so what are you waiting for? Download Lori now
+              and keep PCOS at bay! References: 1. Barthelmess, Erin K, and
+              Rajesh K Naz. “Polycystic ovary syndrome: current status and
+              future perspective.” Frontiers in bioscience (Elite edition) vol.
+              6 104-19. 1 Jan. 2014, doi:10.2741/e695 2. Harris, Holly R., and
+              Kathryn L. Terry. 2016. “Polycystic ovary syndrome and risk of
+              endometrial, ovarian, and breast cancer: a systematic review.”
+              Fertility Research and Practice 2 (1): 14.
+              doi:10.1186/s40738-016-0029-2. http://dx.doi.org/10.1186/
+              s40738-016-0029-2. 3. Harris, H R et al. “Long and irregular
+              menstrual cycles, polycystic ovary syndrome, and ovarian cancer
+              risk in a population-based case-control study.” International
+              journal of cancer vol. 140,2 (2017): 285-291.
+              doi:10.1002/ijc.30441
+            </span>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <div class="share">
+      <button>Social Link</button>
+      <button>Social Link</button>
+      <button>Social Link</button>
+    </div>
+
+    <div class="fimage"></div>
+
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+            <ul class="social list-unstyled" style="float: right">
+              <li>
+                <a href="https://wa.me/+919152017765"
+                  ><span class="fab fa-whatsapp" style="color: #01e675"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lori.healthglobal/"
+                  ><span style="color: #3b5998" class="fab fa-facebook"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="
+                https://www.linkedin.com/company/lori-health/"
+                  ><span style="color: #0e76a8" class="fab fa-linkedin"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/lori.health/"
+                  ><span style="color: #f14843" class="fab fa-instagram"></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Lori_Health"
+                  ><span style="color: #00acee" class="fab fa-twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Manage</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../PCOS/pcos.html">PCOS</a></li>
+              <li><a href="../CHOLESTEROL/cholestrol.html">Cholesterol</a></li>
+              <li><a href="../BLOOD PRESSURE/bp.html">Blood Pressure</a></li>
+              <li><a href="../DIABETES/diabetes.html">Diabetes</a></li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Prevent</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../DNA/dna.html">DNA Testing</a></li>
+              <li>
+                <a href="../INTERMITTENT FASTING/fasting.html"
+                  >Intermittent Fasting</a
+                >
+              </li>
+              <li>
+                <a href="../Menstrual health/menstrualhealth.html"
+                  >Menstrual Health</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md mb-4 mb-md-0">
+            <h3>About</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../about us/about.html">About us</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Legal</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>&copy; 2021 All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./blog.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap4.0.0/jquery-3.2.1.slim.min.js"></script>
+    <script src="../bootstrap4.0.0/popper.min.js"></script>
+    <script src="../bootstrap4.0.0/bootstrap.min.js"></script>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+        // navbarColor();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          document.getElementById("appstore-icon").style.display = "block";
+
+          document.getElementById("playstore-icon").style.display = "block";
+          // document.getElementById("navbar-main").style.maxHeight = "80px";
+
+          // document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("appstore-icon").style.display = "none";
+          document.getElementById("playstore-icon").style.display = "none";
+          // document.getElementById("navbar-main").style.maxHeight = "unset";
+        }
+      }
+
+      function navbarColor() {
+        if (
+          document.body.scrollTop > 70 ||
+          document.documentElement.scrollTop > 70
+        ) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      }
+    </script>
+
+    <!-- <script>
+      $(document).ready(function () {
+        if ($(window).width() < 767) {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "#f7f7f7";
+        } else {
+          document.getElementById("navbar-main").style.backgroundColor =
+            "transparent";
+        }
+      });
+    </script> -->
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/20272274.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

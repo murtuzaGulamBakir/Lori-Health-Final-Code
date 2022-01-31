@@ -1,0 +1,360 @@
+
+:root{
+    --ripseyblue:#222162;
+    --ripseyred: #891619;
+}
+body{
+    overflow-x: hidden !important;
+    margin-top: 20px;
+}
+.head-img{
+  
+    background-size: cover;
+    position: absolute;
+    z-index: -3;
+    padding-top: 4%;
+    background-color: #f7f7f7;
+  width: 100%;
+   /* margin-top: 10px; */
+  
+}
+
+.aboutus{
+    box-shadow: -4px -6px 6px #ffffff, 4px 4px 10px #ceced1;
+    padding: 30px;
+    background-color: #f7f7f7;
+    margin:30px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+.aboutus h3{
+    color: var(--ripseyred);
+    border-bottom: 3px solid turquoise;
+    padding-bottom: 10px;
+    padding: auto 0 10px;
+    font-weight: 500;
+}
+.aboutus p{
+    color: var(--ripseyblue);
+    font-weight: 500;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mission{
+padding-left: 8%;
+margin:150px auto 80px;
+box-sizing: border-box;
+}
+
+.text-above-footer h2,.mission h2{
+    color: var(--ripseyblue);
+    font-weight: 600;
+    font-size: 40px;
+}
+.text-above-footer h3,.mission h3{
+    color: var(--ripseyred);
+}
+.section-head{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-head h2{
+
+    color: var(--ripseyblue);
+    padding-bottom: 10px;
+    border-bottom: 3px solid turquoise;
+    border-width: 30%;
+}
+.section-head h3{
+    color: var(--ripseyred);
+}
+
+.about-text{
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: -4px -6px 6px #ffffff, 4px 4px 10px #ceced1;
+    border-radius: 15px;
+    margin:auto 30px;
+    
+  
+}
+.profile-1{
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+}
+.profile-1-img{
+    display: flex;
+     box-sizing: border-box;
+     align-items: center;
+   
+}
+#profile-1-img{
+position:relative; 
+ top: 30px;
+  left: -40px; 
+}
+.profile-2{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+.profile-2-img{
+    display: flex;
+     box-sizing: border-box;
+align-items: center;
+   
+}
+#profile-2-img{
+position:relative; 
+ bottom: 30px;
+  right: -40px; 
+}
+ul.about-text {
+    list-style: none;
+    color: var(--ripseyblue);
+}
+
+ ul.about-text li span{
+    font-weight: 500;
+}
+ ul.about-text li{
+padding-top: 10px;
+}
+.connect{
+     width: 40px;
+}
+
+.footer-image{
+  
+   background:url(/images/aboutfooter.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  height: 400px;
+} 
+.text-above-footer  h2{
+    padding-top:40px ;
+}
+.p-02{
+    margin-top: 50px;
+}
+@media(max-width:991px){
+    .aboutus{
+     height: 250px;
+    }
+    .mission{
+        padding-left: 2%;
+        margin:100px auto  60px 60px;
+    }
+    .text-above-footer h2,.mission h2{
+        font-size: 30px;
+        
+    }
+    .text-above-footer h3,.mission h3{
+        font-size: 25px;
+       
+    }
+    .p-02{
+        margin-top: 50px;
+    }
+    .connect{
+        width: 30px;
+   }
+   .footer-image{
+    background:url(/images/aboutfooter.png) no-repeat;
+     background-size: cover;
+     background-position: center;
+   height: 350px;
+ } 
+   .container .text-above-footer h2{
+  
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+    }
+@media(min-width: 577px ) and ( max-width:800px){
+    body{
+        font-size: 17px;
+    }
+    .text-above-footer h2,.mission h2{
+        font-size: 25px;
+        
+    }
+    .text-above-footer h3,.mission h3{
+        font-size: 20px;
+       
+    }
+   .container .text-above-footer h2{
+        padding-top:40px ;
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer-image{
+        margin-top: 40px;
+        background:url(/images/aboutfooter.png) no-repeat;
+         background-size: contain;
+         background-position: center;
+        
+         z-index: -1;
+          height: 250px;
+     } 
+     /* #profile-2-img{
+         right: -140px;
+     }*/
+     .aboutus{
+         height: 200px;
+     }
+     .p-02{
+        margin-top: 0;
+    }
+} 
+
+@media(max-width: 576px){
+
+    body{
+        font-size: 15px;
+    }
+    .head-img{
+        margin-top: 60px;
+    }
+    .mission{
+        width: 60%;
+        padding-left: 8%;
+        margin:140px auto  20px 40px ;
+        box-sizing: border-box;
+        }
+    .aboutus{
+        width: 85%;
+        height: 180px;
+    }
+   
+    .section-head h2,.text-above-footer h2,.mission h2{
+        font-size: 23px;
+      
+         }
+         .section-head{
+             width: 60%;
+         }
+         .aboutus h3, .section-head h3, .text-above-footer h3,.mission h3{
+        font-size: 19px;
+       
+       }
+    ul.about-text li {
+     font-size: 15px;
+    }
+   .container .text-above-footer h2{
+        margin-top:0;
+        text-align: center;
+    }
+    .footer-image{
+  
+        background:url(/images/aboutfooter.png) no-repeat;
+         background-size: contain;
+         background-position: center;
+        
+         z-index: -1;
+          height: 220px;
+     } 
+     .p-01{
+         width: 87%;
+     }
+     #profile-1-img,#profile-2-img{
+        width: 160px;
+    }
+    #profile-1-img{
+        left: -30px;
+        top: 30px;
+    }
+    #profile-2-img{
+        right: -30px;
+        bottom: 30px;
+    }
+    .connect{
+        width: 30px;
+    }
+    .p-02{
+        margin-top: 0;
+    }
+}
+@media(max-width: 480px){
+    body{
+        font-size: 13px;
+    }
+    .head-img{
+        margin-top: 60px;
+    }
+    .mission{
+        width: 60%;
+        padding-left: 8%;
+        margin:140px auto  20px 40px ;
+        box-sizing: border-box;
+        }
+    .aboutus{
+        width: 85%;
+        height: 180px;
+    }
+   
+    .section-head h2,.text-above-footer h2,.mission h2{
+        font-size: 18px;
+      
+         }
+         .section-head{
+             width: 60%;
+         }
+         .aboutus h3, .section-head h3, .text-above-footer h3,.mission h3{
+        font-size: 15px;
+       
+       }
+    ul.about-text li {
+     font-size: 13px;
+    }
+    .text-above-footer h2{
+        padding-top:40px ;
+        text-align: center;
+    }
+    .footer-image{
+  
+        background:url(/images/aboutfooter.png) no-repeat;
+         background-size: contain;
+         background-position: center;
+        
+         z-index: -1;
+          height: 170px;
+          margin-top: 20px;
+     } 
+     .p-01{
+         width: 100%;
+     }
+    .mission{
+        margin-top: 100px;
+    }
+    .head-img{
+        margin-top: 70px;
+    }
+    #profile-1-img,#profile-2-img{
+        width: 120px;
+    }
+    #profile-1-img{
+        left: -30px;
+        top: 30px;
+    }
+    #profile-2-img{
+        right: -30px;
+        bottom: 30px;
+    }
+    .connect{
+        width: 25px;
+    }
+    .p-02{
+        margin-top: 0;
+    }
+}
